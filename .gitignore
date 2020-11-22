@@ -1,0 +1,11 @@
+.idea
+__pycache__
+venv
+logs
+
+Pipfile
+.vscode/
+
+.DS_STORE
+
+settings.py
