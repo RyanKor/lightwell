@@ -9,3 +9,5 @@ Pipfile
 .DS_STORE
 
 settings.py
+
+db.sqlite3
