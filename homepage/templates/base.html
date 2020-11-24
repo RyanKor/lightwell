@@ -17,19 +17,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <style>
         .body {
-            margin: 10px 2px;
+            margin: 10px auto;
             min-width: 450px;
+            max-width: 1024px;
         }
 
         .header_main {
             height: 80px;
-            background-color: #bbdefb;
+            background-color: white;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 1rem;
-            margin: 2px;
+            margin: 2px auto;
             min-width: 450px;
+            max-width: 1024px;
         }
 
         .header_logo {
@@ -112,7 +114,8 @@
         .footer_box {
             display: flex;
             flex-direction: row;
-            margin: 2px;
+            margin: 2px auto;
+            max-width: 1024px;
             justify-content: flex-start;
             align-items: center;
         }
@@ -129,13 +132,14 @@
 
         /* main.html */
         .nav_menu {
-            margin: 2px;
+            margin: 2px auto;
             display: flex;
             flex-direction: row;
             height: 30px;
             justify-content: space-between;
             background-color: #06265b;
             min-width: 450px;
+            max-width: 1024px;
         }
 
         .nav_menu_bar {
@@ -238,45 +242,15 @@
             width: 100%;
             padding: 5px 10px;
         }
-        .body_content{
-            width: 90%;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            height: 100%;
-        }
         .compyear_top{
-            font-size: 20px;
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 40px;
             color: black;
-            border-bottom: 1px solid #dbdbdb;
-            height: 3rem;
-        }
-        .left_menu{
-            width:15%;
-            /* border:1px solid black; */
-            height: 100%;
-            margin-right: 10%;
-        }
-        .year_content{
-            display:flex;
-            flex-direction: row;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-        }
-        .year{
-            color: #31B4C1;
-            font-size: 30px;
-            width: 15%;
-            height: 100%;
-        }
-        .year_box{
-            border-left: 1px #31B4C1 solid;
-            padding-left: 10px;
-            width: 80%;
-        }
-        .year_con1{
-            font-size: 8px;
+            border-bottom: 3px solid #dbdbdb;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
         /*universal */
         .block{
@@ -313,8 +287,9 @@
         }
         .content{
             height: 100%;
-            width: 75%;
+            width: 77%;
             border: 1px solid black;
+            padding: 20px;
         }
         .title_last {
             border-right: none;

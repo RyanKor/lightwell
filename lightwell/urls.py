@@ -28,8 +28,8 @@ urlpatterns = [
         template_name='./company/company_info.html')),
     path('company/history',
          TemplateView.as_view(template_name='./company/company_history.html')),
-    path('company/business-area',
-         TemplateView.as_view(template_name='./company/company_area.html')),
+    path('company/field',
+         TemplateView.as_view(template_name='./company/company_field.html')),
     path('company/access',
          TemplateView.as_view(template_name='./company/company_access.html')),
     # 용접기 제품
