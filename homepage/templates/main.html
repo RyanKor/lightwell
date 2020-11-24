@@ -1,4 +1,5 @@
 {% extends './base.html' %}
+{% load static %}
 {% block content %}
     <div class="banner">
         <div class="banner_info">
@@ -12,24 +13,72 @@
         <div class="main_bar_info">
             <div class="nav1_1">
                 <div class="main_title">인증서</div>
-                <div class="main_content">이미지</div>
+                <div class="main_content">
+                    <img src="{% static 'imgs/certificate/ce.png' %}" alt="CE">
+                    <img src="{% static 'imgs/certificate/iso.png' %}" alt="ISO">
+                </div>
             </div>
             <div class="nav1_2">
                 <div class="main_title title_last">수출 국가</div>
-                <div class="main_content">이미지</div>
+                <div class="main_content">
+                    <img src="{% static 'imgs/country/china.png' %}" alt="China">
+                    <img src="{% static 'imgs/country/japan.png' %}" alt="Japan">
+                    <img src="{% static 'imgs/country/vietnam.png' %}" alt="Vietnam">
+                    <img src="{% static 'imgs/country/angola.png' %}" alt="Angola">
+                    <img src="{% static 'imgs/country/phil.png' %}" alt="Philiphines">
+                    <img src="{% static 'imgs/country/brazil.png' %}" alt="Brazil">
+                </div>
             </div>
         </div>
         <div class="main_bar_product">
             <div class="main_title">용접기</div>
-            <div class="main_content">이미지</div>
+            <div class="main_content">
+                <div>CO2 용접기</div>
+                <hr />
+                <div class="welding-machine">
+                    <div>가우징 용접기</div>
+                    <div>오토캐리지</div>
+                    <div>서브머지드 용접기</div>
+                    <div>DC티그 용접기</div>
+                    <div>아크 용접기</div>
+                    <div>선상 판넬</div>
+                </div>
+            </div>
         </div>
         <div class="main_bar_product">
             <div class="main_title">용접기 소모품</div>
-            <div class="main_content">이미지</div>
+            <div class="main_content">
+                <div>CO2</div>
+                <hr />
+                <div class="welding-machine">
+                    <div>AUTO CARRIAGE</div>
+                    <div>TIG</div>
+                    <div>REGULATOR</div>
+                </div>
+            </div>
         </div>
         <div class="main_bar_product">
             <div class="main_title title_last">절단기</div>
-            <div class="main_content">이미지</div>
+            <div class="main_content">
+                <div>2D PLAZMA</div>
+                <hr />
+                <div class="welding-machine">
+                    <div>3D LINK PLAZMA</div>
+                    <div>CNS GAS</div>
+                    <div>CUTTING MACHINE</div>
+                    <div>COLD ROLLING</div>
+                    <div>BENDING MACHINE</div>
+                    <div>ELBOW CUTTING MACHINE</div>
+                    <div>FLAME PLANER</div>
+                    <div>HIGH FREQUENCY</div>
+                    <div>BENDING MACHINE</div>
+                    <div>PIPE COSTER</div>
+                    <div>PIPE GAS</div>
+                    <div>CUTTING MACHINE</div>
+                    <div>PIPE ROTATOR</div>
+                    <div>POSITIONER</div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

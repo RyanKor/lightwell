@@ -1,0 +1,49 @@
+.body_content{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.compyear_top{
+    font-size: 20px;
+    color: black;
+    border-bottom: 1px solid #dbdbdb;
+    height: 3rem;
+}
+.left_menu{
+    width:15%;
+    /* border:1px solid black; */
+    height: 100%;
+    margin-right: 10%;
+}
+.year_content{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.year{
+    color: #31B4C1;
+    font-size: 30px;
+    width: 15%;
+    height: 100%;
+}
+.year_box{
+    border-left: 1px #31B4C1 solid;
+    padding-left: 10px;
+    width: 80%;
+}
+.year_con1{
+    font-size: 8px;
+}
+.menu1{
+    border-bottom: 1px solid #dbdbdb;
+    text-align: right;
+    margin-right: 5%;
+}
+.company_intro{
+    text-align: center;
+    height: 3rem;
+}
