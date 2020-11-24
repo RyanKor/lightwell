@@ -3,9 +3,10 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='main.html')),
-    path('company/',
-         TemplateView.as_view(template_name='company/company.html')),
+    # 사용 용도를 알 수 없는 코드들 주석처리
+    # path('', TemplateView.as_view(template_name='main.html')),
+    # path('company/',
+    #      TemplateView.as_view(template_name='company/company.html')),
 
     # 용접기 제품
     path('product/weldig', TemplateView.as_view(template_name='product/welding.html')),
