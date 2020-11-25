@@ -17,61 +17,59 @@
 </head>
 
 <body>
-    <div class="header_main">
-        <div class="header_company">
-            <!-- <div class="header_logo"></div> -->
-            <img src="{% static 'imgs/logo.png' %}" class="header_logo" alt="logo">
-            <div class="header_content">
-                <div class="header_row1">Lightwell Welding Machine</div>
-                <div class="header_row2">Made in Korea since 2004</div>
-            </div>
-        </div>
-        <div class="header_menu">
-            <div class="header_menu_lang">
-                <div class="header_menu_lang_flag">
-                </div>
-                <select name="lang" id="lang" class="header_menu_lang_select">
-                    <option value="korean">한국어</option>
-                    <option value="eng">english</option>
-                </select>
-            </div>
-            <div class="header_menu_search">
-                <div class="search">
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
-                        placeholder="제품명 입력">
-                </div>
-                <div>
-                    <button class="btn btn-outline-secondary">검색</button>
+    <div class="container">
+    <header>
+        <div class="left-menu">
+            <img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo">
+            <div class="company-slogan">
+                <div class="empty"></div>
+                <div class="slogan-text">
+                    <strong> Made in Korea <br>
+                    Since 2004</strong>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="nav_menu">
-        <div class="nav_menu_bar">
+        <div class="right-menu">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">🇰🇷 Korean</a>
+                  <a class="dropdown-item" href="#">🇺🇸 English</a>
+                  <a class="dropdown-item" href="#">🇯🇵 Japan</a>
+                </div>
+            </li>
+            <div class="empty"></div>
+        </div>
+    </header>
+    <nav class="nav_menu">
+        <div class="nav_menu_bar right-border">
             <a href="/company" class="nav_menu_bar_title">회사소개</a>
         </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">제품</div>
+        <div class="nav_menu_bar right-border">
+            <a href="#" class="nav_menu_bar_title">제품</a>
+        </div>
+        <div class="nav_menu_bar right-border">
+            <a href="#" class="nav_menu_bar_title">카탈로그</a>
+        </div>
+        <div class="nav_menu_bar right-border">
+            <a href="#" class="nav_menu_bar_title">연락처</a>
         </div>
         <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">카탈로그</div>
+            <a href="#" class="nav_menu_bar_title title_last">SNS</a>
         </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">연락처</div>
-        </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title title_last">SNS</div>
-        </div>
-    </div>
+    </nav>
     <div class="body">
         {% block content %}
         {% endblock %}
     </div>
-    <div class="footer_box">
-        <div class="footer_left">법적고지</div>
-        <div class="footer_center">개인정보처리방침</div>
-        <div class="footer_right">문의</div>
-    </div>
+</div>
+<div class="footer_box">
+    <div class="footer_left">법적고지</div>
+    <div class="footer_center">개인정보처리방침</div>
+    <div class="footer_right">문의</div>
+</div>
 </body>
 
 </html>
