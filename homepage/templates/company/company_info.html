@@ -1,5 +1,7 @@
 {% extends '../base.html' %}
+{% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/company.css' %}">
 <div class="block">
   <div class="menu">
     <div class="menu_title">
@@ -7,10 +9,10 @@
       회사소개
     </div>
     <div class="menu_list">
-      <div class="menu_list_button menu_select">대표자 인사말</div>
-      <div class="menu_list_button">회사연혁</div>
-      <div class="menu_list_button">사업분야</div>
-      <div class="menu_list_button">찾아오시는 길</div>
+      <div class="menu_list_button menu_select"><a href="/company" >대표자 인사말</a></div>
+      <div class="menu_list_button"><a href="/company/history">회사연혁</a> </div>
+      <div class="menu_list_button"><a href="/company/field">사업분야</a></div>
+      <div class="menu_list_button "><a href="/company/access">찾아오시는 길</a></div>
     </div>
   </div>
   <div class="company_img"><img src="/static/imgs/company_info/ceo_intro/sub_m_04_01.gif" /></div>

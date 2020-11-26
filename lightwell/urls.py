@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import (handler400, handler403, handler404, handler500)
+from django.conf.urls import (handler400, handler403, handler404, handler500) # Error Handling
 from django.views.generic import TemplateView
 from homepage import views
 
@@ -25,7 +25,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='./main.html')),
     # 회사소개
     path('company', TemplateView.as_view(
-        template_name='./company/company_info.html')),
+        template_name='./company/company_info.html')), # 회사 소개
     path('company/history',
          TemplateView.as_view(template_name='./company/company_history.html')),
     path('company/field',
