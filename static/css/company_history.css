@@ -26,6 +26,7 @@
     font-size: 1.2rem;
     color: #444444;
     text-decoration: none;
+
 }
 .menu_list_button{
     border-bottom: 1px solid  #666666;
@@ -35,8 +36,16 @@
     color: #666666;
     transition: all ease-in .5s;
 }
-
 /* global css */
 .menu_select{
     border: 6px solid rgb(255, 84, 84);
+}
+
+.compyear_top{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+b{
+    margin-left : 0.8rem
 }

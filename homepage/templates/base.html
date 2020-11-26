@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +20,7 @@
     <div>
         <header>
             <div class="left-menu">
-                <img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo">
+                <a href="/"><img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo"></a>
                 <div class="company-slogan">
                     <div class="slogan-text">
                         <strong> Made in Korea <br>Since 2004</strong>
@@ -35,7 +34,7 @@
                         Language
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">🇰🇷 Korean</a>
+                        <a class="dropdown-item" href="/">🇰🇷 Korean</a>
                         <a class="dropdown-item" href="#">🇺🇸 English</a>
                     </div>
                 </li>
@@ -60,6 +59,7 @@
             {% endblock %}
         </div>
         <div class="footer_box">
+            <hr>
             <div class="site-link">
                 <a href="#" class="footer_left">Home</a>
                 <a href="#" class="footer_center">Contact</a>

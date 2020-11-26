@@ -144,7 +144,8 @@ nav {
     background-color:#e3f3fd;
 }
 .certificate {
-    background-color:#efefef;
+    background-color:white;
+    border: solid 2px #efefef;
 }
 .export, .partnership {
     background-color:white;
@@ -270,3 +271,4 @@ nav {
 .footer_left {
     margin-right: 30px;
 }
+
