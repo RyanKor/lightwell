@@ -17,71 +17,64 @@
 </head>
 
 <body>
-    <div class="container">
-    <header>
-        <div class="left-menu">
-            <img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo">
-            <div class="company-slogan">
-                <div class="empty"></div>
-                <div class="slogan-text">
-                    <strong> Made in Korea <br>
-                    Since 2004</strong>
+    <div>
+        <header>
+            <div class="left-menu">
+                <a href="/"><img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo"></a>
+                <div class="company-slogan">
+                    <div class="slogan-text">
+                        <strong> Made in Korea <br>Since 2004</strong>
+                    </div>
                 </div>
             </div>
+            <div class="right-menu">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/">🇰🇷 Korean</a>
+                        <a class="dropdown-item" href="#">🇺🇸 English</a>
+                    </div>
+                </li>
+            </div>
+        </header>
+        <nav class="nav_menu">
+            <div class="nav_menu_bar right-border">
+                <a href="/company" class="nav_menu_bar_title">회사소개</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="#" class="nav_menu_bar_title">제품</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="#" class="nav_menu_bar_title">카탈로그</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="#" class="nav_menu_bar_title">연락처</a>
+            </div>
+        </nav>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
         </div>
-        <div class="right-menu">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Language
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">🇰🇷 Korean</a>
-                  <a class="dropdown-item" href="#">🇺🇸 English</a>
-                  <a class="dropdown-item" href="#">🇯🇵 Japan</a>
-                </div>
-            </li>
-            <div class="empty"></div>
-        </div>
-    </header>
-    <nav class="nav_menu">
-        <div class="nav_menu_bar right-border">
-            <a href="/company" class="nav_menu_bar_title">회사소개</a>
-        </div>
-        <div class="nav_menu_bar right-border">
-            <a href="#" class="nav_menu_bar_title">제품</a>
-        </div>
-        <div class="nav_menu_bar right-border">
-            <a href="#" class="nav_menu_bar_title">카탈로그</a>
-        </div>
-        <div class="nav_menu_bar right-border">
-            <a href="#" class="nav_menu_bar_title">연락처</a>
-        </div>
-        <div class="nav_menu_bar">
-            <a href="#" class="nav_menu_bar_title title_last">SNS</a>
-        </div>
-    </nav>
-    <div class="body">
-        {% block content %}
-        {% endblock %}
         <div class="footer_box">
+            <hr>
             <div class="site-link">
                 <a href="#" class="footer_left">Home</a>
                 <a href="#" class="footer_center">Contact</a>
-                <a href="#" class="footer_right">Site Map</a>
             </div>
             <div class="contact-info">
-              <div> 상호 : (주)라이트웰 /사업자 등록번호 : 612-81-18729</div>
-              <div> 주소 : 경남 통영시 광도면 춘원2로 63-56 </div>
-              <div> 대표 : 조광래   T . 82-10-6646-0706 </div>
-              <div>고객센터 : 82-55-647-0703 / FAX . 82-55-646-0706 </div>
-              <div>Email : lightwel@lightwel.co.kr </div>
+                <div> 상호 : (주)라이트웰 /사업자 등록번호 : 612-81-18729</div>
+                <div> 주소 : 경남 통영시 광도면 춘원2로 63-56 </div>
+                <div> 대표 : 조광래 T . 82-10-6646-0706 </div>
+                <div>고객센터 : 82-55-647-0703 / FAX . 82-55-646-0706 </div>
+                <div>Email : lightwel@lightwel.co.kr </div>
 
-              <div>근무시간 : 월 - 금 (09:00 ~ 18:00) 공휴일 휴무 </div>
+                <div>근무시간 : 월 - 금 (09:00 ~ 18:00) 공휴일 휴무 </div>
             </div>
         </div>
     </div>
-
-</div>
 
 </body>
 

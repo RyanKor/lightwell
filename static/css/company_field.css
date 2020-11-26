@@ -26,6 +26,7 @@
     font-size: 1.2rem;
     color: #444444;
     text-decoration: none;
+
 }
 .menu_list_button{
     border-bottom: 1px solid  #666666;
@@ -34,6 +35,21 @@
 .menu_list_button > a:hover{
     color: #666666;
     transition: all ease-in .5s;
+}
+
+/* compyear_top */
+.compyear_top{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* content - image */
+.content{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* global css */
