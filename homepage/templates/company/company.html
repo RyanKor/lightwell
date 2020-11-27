@@ -1,0 +1,24 @@
+<div class="menu">
+    <div class="menu_title">
+      <!-- <img src="/static/imgs/company_info/ceo_intro/sub_menu_01.gif" /> -->
+      회사소개
+    </div>
+    <div class="menu_list">
+      <div class="menu_list_button"><a href="/company" >대표자 인사말</a></div>
+      <div class="menu_list_button"><a href="/company/history">회사연혁</a> </div>
+      <div class="menu_list_button"><a href="/company/field">사업분야</a></div>
+      <div class="menu_list_button"><a href="/company/access">찾아오시는 길</a></div>
+    </div>
+  </div>
+
+<script>
+const activeBar = document.querySelectorAll('.menu_list_button > a')
+
+activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+    item.classList.add('menu_select')
+    }else{
+    item.classList.remove('menu_select')
+    }
+})
+</script>
