@@ -8,9 +8,7 @@
 
 <script>
   const activeBar = document.querySelectorAll('.nav-link')
-  
   activeBar.forEach(item =>{
-    console.log(item.pathname)
     if (item.pathname === window.location.pathname){
       item.classList.add('turnOn')
     }else{
