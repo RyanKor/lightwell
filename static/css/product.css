@@ -25,8 +25,11 @@ margin-top: 3rem;
     color: black;
     justify-content: space-around;
 }
-.nav-link{
+.nav-link, .btn > a{
     color: black;
+}
+.btn > a{
+    text-decoration: none;
 }
 .nav{
     width: 25%;
