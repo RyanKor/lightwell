@@ -23,7 +23,7 @@
     text-align: right;
 }
 .menu_list_button > a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #444444;
     text-decoration: none;
 
@@ -44,4 +44,10 @@
 .address-text, .compyear_top{
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.address-text {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
 }
