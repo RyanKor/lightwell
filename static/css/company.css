@@ -23,6 +23,7 @@
     text-align: right;
 }
 .menu_list_button > a{
+    display: block;
     font-size: 1.1rem;
     color: #444444;
     text-decoration: none;
@@ -38,5 +39,5 @@
 
 /* global css */
 .menu_select{
-    border: 6px solid rgb(255, 84, 84);
+    border: 6px solid #64b5f6;
 }
