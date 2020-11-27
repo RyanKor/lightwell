@@ -1,0 +1,33 @@
+{% extends "../../base.html" %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% include "../left-navbar.html" %}
+  <!-- 용접기 제품 - CO2 용접기 -->
+  <div class="welding-product">
+{% include "./regulator.html" %}
+<td width="750" valign="top" height="571">
+						
+  <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+      <tr>
+          <td width="750">
+              <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                      <td valign="top" height="210" width="750">
+<img src="{% static 'imgs/product_info/welding_expendables/regulator/sub2_02_sub4_01.gif' %}" width="750" height="226" border="0"></td>
+</tr>
+                  <tr>
+                      <td>
+
+                          <p><img src="{% static 'imgs/product_info/welding_expendables/regulator/sub2_02_sub4_02.gif' %}" width="750" height="217" border="0"></p>
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+      <tr>
+          <td width="750">&nbsp;</td>
+</tr>
+</tbody></table></td>
+</div>
+{% endblock %}

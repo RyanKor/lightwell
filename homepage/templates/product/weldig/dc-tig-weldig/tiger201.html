@@ -1,55 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- bootstrap import -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-  <style>
-    .bg-primary {
-      background-color: #1565c0 !important;
-    }
-  </style>
-  <!-- bootstrap import 끝 -->
-  <title>Document</title>
-</head>
-
-<body>
-  <!-- 용접기 제품 - DC티그 용접기 -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/product/weldig/dc-tig-weldig/tig-300ep">TIG 300EP</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/product/weldig/dc-tig-weldig/tig-500ep">TIG 500EP</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="/product/weldig/dc-tig-weldig/tiger201">TIGER201</a>
-      </li>
-    </ul>
-  </nav>
+{% extends "../../../base.html" %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% include "../../left-navbar.html" %}
+  <!-- 용접기 제품 - CO2 용접기 -->
+  <div class="welding-product">
+{% include "./dc-tig-welding.html" %}
   <tr>
     <td width="750">
       <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
         <tbody>
           <tr>
             <td rowspan="3" valign="top" height="304">
-              <img src="images/sub2_sub5_3.gif" width="284" height="309" alt=""></td>
+              <img style="margin-top: 1rem;" src="/static/imgs/product_info/welding_machine/DC_tig/TIGER201/sub2_sub5_3.gif" width="284" height="309" alt=""></td>
             <td>
-              <img src="images/sub2_m_05.gif" width="466" height="18" alt=""></td>
+              <img src="/static/imgs/product_info/welding_machine/DC_tig/TIGER201/sub2_m_05.gif" width="466" height="18" alt=""></td>
           </tr>
           <tr>
             <td>
-              <img src="images/sub2_m_06.gif" width="466" height="45" alt=""></td>
+              <img src="/static/imgs/product_info/welding_machine/DC_tig/TIGER201/sub2_m_06.gif" width="466" height="45" alt=""></td>
           </tr>
           <tr>
             <td width="466" height="229" valign="top">
@@ -60,12 +29,12 @@
           </tr>
           <tr>
             <td colspan="2">
-              <img src="images/sub2_m_08.gif" width="750" height="45" alt=""></td>
+              <img src="/static/imgs/product_info/welding_machine/DC_tig/TIGER201/sub2_m_08.gif" width="750" height="45" alt=""></td>
           </tr>
           <tr>
             <td colspan="2">
 
-              <table cellpadding="0" cellspacing="0" width="93%" style="margin-left:23;">
+              <table cellpadding="0" cellspacing="0" width="100%" style="margin-left:23;">
                 <tbody>
                   <tr>
                     <td width="347"
@@ -194,35 +163,35 @@
           </tr>
           <tr>
             <td colspan="2">
-              <p><img src="images/sub2_m_09.gif" width="750" height="45" alt=""></p>
+              <p><img src="/static/imgs/product_info/welding_machine/DC_tig/TIGER201/sub2_m_09.gif" width="750" height="45" alt=""></p>
             </td>
           </tr>
           <tr>
             <td colspan="2">
               <ul>
-                <li style="list-style-image:url('images/icon.gif'); margin-right:30; margin-left:30;">
+                <li style="list-style-image:url('/static/imgs/product_info/welding_machine/DC_tig/TIGER201/icon.gif'); margin-right:30; margin-left:30;">
                   <div align="justify">
                     <font color="#2688A8"><b>디지털 컨트롤과 자동설정 기능</b></font>- 디지털 컨트롤을 적용하여 설정된 데이터를 자동 저장하게 하여 보다 쉬운 조작이
                     가능합니다.
                   </div>
                 </li>
-                <li style="list-style-image:url('images/icon.gif'); margin-right:30; margin-left:30;">
+                <li style="list-style-image:url('/static/imgs/product_info/welding_machine/DC_tig/TIGER201/icon.gif'); margin-right:30; margin-left:30;">
                   <div align="justify"><b>
                       <font color="#2688A8">아크 스타트(ARC START) 안정성 스타트 전류조절 기능</font>
                     </b>이 있어 100% 아크 스타트(ARC START)가 가능하며 연속 태그(TAG)용접에 탁월한 효과가 있습니다.</div>
                 </li>
-                <li style="list-style-image:url('images/icon.gif'); margin-right:30; margin-left:30;">
+                <li style="list-style-image:url('/static/imgs/product_info/welding_machine/DC_tig/TIGER201/icon.gif'); margin-right:30; margin-left:30;">
                   <div align="justify">
                     <font color="#2688A8"><b>용접 기능성 다양 </b></font>- 일반 DC TIG용접(2T), HOLD기능을 활용하는 DC TIG용접(4T), 수용접(DC
                     ARC, MMA)등의 3가지 기능을 1대의 용접기로 해결합니다.
                   </div>
                 </li>
-                <li style="list-style-image:url('images/icon.gif'); margin-right:30; margin-left:30;">
+                <li style="list-style-image:url('/static/imgs/product_info/welding_machine/DC_tig/TIGER201/icon.gif'); margin-right:30; margin-left:30;">
                   <div align="justify"><b>
                       <font color="#2688A8">핫 스타트 전류 조절 </font>
                     </b> - 아크 스타트를 보다 원활하게 할 수 있도록 돕는 기능입니다.</div>
                 </li>
-                <li style="list-style-image:url('images/icon.gif'); margin-right:30; margin-left:30;">
+                <li style="list-style-image:url('/static/imgs/product_info/welding_machine/DC_tig/TIGER201/icon.gif'); margin-right:30; margin-left:30;">
                   <div align="justify"><b>
                       <font color="#2688A8">초기 전류(START CURRENT)조절 기능</font>
                     </b> - 용접 개시점의 아크 강도를 조절하여 박판의 CRACK이나 급속 가접시의 고속 START를 가능케 합니다.</div>
@@ -234,6 +203,5 @@
       </table>
     </td>
   </tr>
-</body>
-
-</html>
+</div>
+{% endblock %}

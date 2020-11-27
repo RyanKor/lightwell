@@ -72,14 +72,23 @@ urlpatterns = [
     path('product/weldig/arch-weldig/s-200dp',
          TemplateView.as_view(template_name='./product/weldig/arch-weldig/s-200dp.html')),
 
-    # 용접기 소모품
-    path('product/expendable_weldig',
-         TemplateView.as_view(template_name='product/expendable_weldig.html')),
+    # 용접기 소모품 - CO2
+    path('product/welding-expendable/expendable_co2',
+         TemplateView.as_view(template_name='product/welding-expendable/expendable_co2.html')),
+    # 용접기 소모품 - Auto Carriage
+    path('product/welding-expendable/expendable_auto',
+         TemplateView.as_view(template_name='product/welding-expendable/expendable_auto_carriage.html')),
+    # 용접기 소모품 - TIG
+    path('product/welding-expendable/expendable_tig',
+         TemplateView.as_view(template_name='product/welding-expendable/expendable_tig.html')),
+    # 용접기 소모품 - Regulator
+    path('product/welding-expendable/expendable_regulator',
+         TemplateView.as_view(template_name='product/welding-expendable/expendable_regulator.html')),
     # 절단기 제품
     path('product/cutting', TemplateView.as_view(template_name='product/cutting.html')),
     # 절단기 소모품
     path('product/expendable_cutting',
-         TemplateView.as_view(template_name='product/expendable_cutting.html')),
+         TemplateView.as_view(template_name='product/cutter-expendable/cutter-expendable.html')),
     # Blastinc Machine
     path('product/blasting',
          TemplateView.as_view(template_name='product/blasting.html')),

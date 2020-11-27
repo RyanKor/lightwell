@@ -1,85 +1,18 @@
-{% extends '../../../base.html' %}
+{% extends "../../../base.html" %}
+{% load static %}
 {% block content %}
-<div class="block">
-  <div class="menu">
-    <!-- left-navbar (대분류/중분류/소분류) 시작 -->
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1"
-        aria-expanded="false" aria-label="Toggle navigation">
-        용접기 제품
-      </button>
-    </nav>
-    <div class="collapse" id="navbar1">
-      <a class="dropdown-item" href="#">CO2용접기</a>
-      <a class="dropdown-item" href="#">가우징 용접기</a>
-      <a class="dropdown-item" href="#">오토캐리지</a>
-      <a class="dropdown-item" href="#">서브머지드용접기</a>
-      <a class="dropdown-item" href="#">DC티그용접기</a>
-      <a class="dropdown-item" href="#">아트용접기</a>
-      <a class="dropdown-item" href="#">선상판넬</a>
-    </div>
-
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2"
-        aria-expanded="false" aria-label="Toggle navigation">
-        용접기 소모품
-      </button>
-    </nav>
-    <div class="collapse" id="navbar2">
-      <a class="dropdown-item" href="#">CO2</a>
-      <a class="dropdown-item" href="#">AUTO CARRIAGE</a>
-      <a class="dropdown-item" href="#">TIG</a>
-      <a class="dropdown-item" href="#">REGULATOR</a>
-    </div>
-
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar3" aria-controls="navbar3"
-        aria-expanded="false" aria-label="Toggle navigation">
-        절단기 제품
-      </button>
-    </nav>
-    <div class="collapse" id="navbar3">
-      <a class="dropdown-item" href="#">2D PLASMA</a>
-      <a class="dropdown-item" href="#">3D LINK PLASMA</a>
-      <a class="dropdown-item" href="#">CNC GAS CUTTING MACHINE</a>
-      <a class="dropdown-item" href="#">COLD ROLLING BENDING MACHINE</a>
-      <a class="dropdown-item" href="#">ELBOW CUTTING MACHINE</a>
-      <a class="dropdown-item" href="#">FLAME PLANER</a>
-      <a class="dropdown-item" href="#">HIGH FREQUENCY BENDING MACHINE</a>
-      <a class="dropdown-item" href="#">PIPE COASTER</a>
-      <a class="dropdown-item" href="#">PIPE GAS CUTTING MACHINE</a>
-      <a class="dropdown-item" href="#">PIPE ROTATOR</a>
-      <a class="dropdown-item" href="#">POSITIONER</a>
-    </div>
-
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button">
-        절단기 소모품
-      </button>
-    </nav>
-    <!-- left-navbar (대분류/중분류/소분류) 끝 -->
-  </div>
-  <div class="content">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link active" href="/product/weldig/arch-weldig/apollo-180">APOLLO 180</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/product/weldig/arch-weldig/apollo-200">APOLLO 200</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/product/weldig/arch-weldig/s-200dp">S 200DP</a>
-        </li>
-      </ul>
-    </nav>
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% include "../../left-navbar.html" %}
+  <!-- 용접기 제품 - CO2 용접기 -->
+  <div class="welding-product">
+{% include "./arch-welding.html" %}
     <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="750">
           <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td rowspan="3" valign="top" height="304">
-                <img src="/static/imgs/product_info/welding_machine/arc/APOLLO180/sub2_sub6_1.gif" width="284"
+                <img style="margin-top: 1rem;" src="/static/imgs/product_info/welding_machine/arc/APOLLO180/sub2_sub6_1.gif" width="284"
                   height="309" alt=""></td>
               <td>
                 <img src="/static/imgs/product_info/welding_machine/arc/APOLLO180/sub2_m_05.gif" width="466" height="18"
