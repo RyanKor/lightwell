@@ -1,273 +1,317 @@
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
 .main_content {
-    width: 1024px;
-    margin: 30px auto 20px;
-    padding: 5px;
+  width: 1024px;
+  margin: 30px auto 20px;
+  padding: 5px;
 }
 /* header & navbar setting */
 header {
-    margin: 50px auto 40px;
-    width: 1024px;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px auto 40px;
+  width: 1024px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    width: 220px;
-    height: 100%;
+.logo {
+  width: 220px;
+  height: 100%;
 }
 .left-menu {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 .right-menu {
-    height: 100%;
+  height: 100%;
 }
-.company-slogan{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.company-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.slogan-text{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
+.slogan-text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
 }
 .right-menu > li {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
-.right-menu > li > a{
-    color: black;
+.right-menu > li > button {
+  background: none;
+  border: none;
 }
-.right-menu > li > a:hover{
-    color: lightgrey;
+.right-menu > li > a {
+  color: black;
+}
+.right-menu > li > a:hover {
+  color: lightgrey;
 }
 
 /* Navbar */
 nav {
-    display: flex;
-    width: 1024px;
-    height: 30px;
-    margin: 0 auto;
-    align-items: center;
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
-    background-color: transparent;
-    border-radius: 5px 5px 5px 5px;
-    border:solid 0px transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 1024px;
+  height: 30px;
+  margin: 0 auto;
+  align-items: center;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-radius: 5px 5px 5px 5px;
+  border: solid 0px transparent;
 }
-.right-border{
-    border-right: 1px solid grey;
+.right-border {
+  border-right: 1px solid grey;
 }
 .nav_menu_bar_title {
-    font-size: 16px;
+  font-size: 16px;
 }
-.nav_menu_bar{
-    text-align: center;
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
+.nav_menu_bar {
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }
-.nav_menu_bar > a{
-    cursor: pointer;
-    text-decoration: none;
-    color: #444444;
+.nav_menu_bar > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #444444;
 }
 
-.nav_menu_bar:hover{
-    background-color: rgb(255, 248, 240);
-    transition: all ease-in .5s;
+.nav_menu_bar:hover {
+  background-color: rgb(255, 248, 240);
+  transition: all ease-in 0.5s;
 }
 
 .dropdown-toggle {
-    text-align: end;
-    width: 140px;
-    padding-right: 20px;
+  text-align: end;
+  width: 140px;
+  padding-right: 20px;
 }
 
 .dropdown-menu {
-    width: 140px;
-    text-align: center;
+  width: 140px;
+  text-align: center;
 }
 
 /* body */
 .product {
-    width: 28%;
+  width: 28%;
 }
 .title {
-    color: #06265b;
+  color: #06265b;
 }
 .black-title {
-    color: #333333;
+  color: #333333;
 }
 .certificate {
-    width: 28%;
-    height: 300px;
+  width: 28%;
+  height: 300px;
 }
-.welding-box, .export {
-    width: 20%;
+.welding-box,
+.export {
+  width: 20%;
 }
 .cutter-box {
-    width: 48%;
+  width: 48%;
 }
-.partnership{
-    width: 48%;
-    height: 300px;
+.partnership {
+  width: 48%;
+  height: 300px;
 }
 .products {
-    margin-top: 10px;
-    width: 100%;
-    padding: 20px;
-    height: 270px;
-    font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 20px;
+  height: 270px;
+  font-size: 14px;
 }
 .welding {
-    margin-top: 10px;
-    width: 100%;
-    height: 270px;
-    padding: 20px;
-    font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  height: 270px;
+  padding: 20px;
+  font-size: 14px;
 }
 .cutter {
-    margin-top: 10px;
-    width: 100%;
-    height: 270px;
-    padding: 20px;
-    font-size: 13px;
+  margin-top: 10px;
+  width: 100%;
+  height: 270px;
+  padding: 20px;
+  font-size: 13px;
 }
-.products, .welding, .cutter{
-    background-color:#e3f3fd;
+.products,
+.welding,
+.cutter {
+  background-color: #e3f3fd;
 }
 .certificate {
-    background-color:white;
-    border: solid 2px #efefef;
+  background-color: white;
+  border: solid 2px #efefef;
 }
-.export, .partnership {
-    background-color:white;
-    border: solid 2px #efefef;
+.export,
+.partnership {
+  background-color: white;
+  border: solid 2px #efefef;
 }
 /* border box 상단 CSS 작업 */
-.upper{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 90%;
+.upper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
 }
-.title{
-    margin-top: 0.2rem;
-    text-align: center;
-    font-weight: bold;
+.title {
+  margin-top: 0.2rem;
+  text-align: center;
+  font-weight: bold;
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .content-cutter {
-    justify-content: start;
+  justify-content: start;
 }
-.content > a{
-    height: 35px;
-    color: black;
-    text-decoration: none;
+.content > a {
+  height: 35px;
+  color: black;
+  text-decoration: none;
 }
-.content > a:hover{
-    color: #666666;
-    transition: all ease-in .5s;
+.content > a:hover {
+  color: #666666;
+  transition: all ease-in 0.5s;
 }
-.content-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.products, .welding, .cutter {
-    border-radius: 20px 0 20px 0;
+.products,
+.welding,
+.cutter {
+  border-radius: 20px 0 20px 0;
 }
-.export, .certificate, .partnership {
-    border-radius: 5px;
-    height: 200px;
+.export,
+.certificate,
+.partnership {
+  border-radius: 5px;
+  height: 200px;
 }
-.products{
-    display: flex;
-    flex-direction: column;
-    
+.products {
+  display: flex;
+  flex-direction: column;
 }
 
 /* border box 하단 작업 (buttom) */
 
-.bottom{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 80%;
-    margin-top: 2rem;
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  margin-top: 2rem;
 }
 /* 하단 이미지들 크기 조절하기 */
-.certificate, .export, .partnership{
-    height: 270px;
+.certificate,
+.export,
+.partnership {
+  height: 270px;
 }
-.certificate-imgs, .export-imgs, .partner-company{
-    display: flex;
-    flex-direction: column;
-    height: 90%;
+.certificate-imgs,
+.export-imgs,
+.partner-company {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
 }
-.img1, .flag {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%;
+.img1,
+.flag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
 }
-.img1 > img{
-    width: 30%;
-    max-height: 60%;
+.img1 > img {
+  width: 30%;
+  max-height: 60%;
 }
-.company-img{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 30%;
+.company-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
 }
-.company-img > img{
-    width: 30%;
-    max-height: 80%;
+.company-img > img {
+  width: 30%;
+  max-height: 80%;
 }
 
 /* carousel */
-#carouselExampleControls{
-    margin-top: 2rem;
+#carouselExampleControls {
+  margin-top: 2rem;
 }
 
 /* footer */
 
 .footer_box {
-    margin: 40px auto 50px;
-    width: 1024px;
-    padding-left: 30px;
+  margin: 40px auto 50px;
+  width: 1024px;
+  padding-left: 30px;
 }
-.site-link{
-    font-weight: bold;
-    display: flex;
-    justify-content: start;
+.site-link {
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
 }
-.site-link > a{
-    text-decoration: none;
-    color: black;
+.site-link > a {
+  text-decoration: none;
+  color: black;
 }
-.site-link > a:hover{
-    color: #666666;
-    transition: all ease-in .5s;
+.site-link > a:hover {
+  color: #666666;
+  transition: all ease-in 0.5s;
 }
 .contact-info {
-    margin-top: 8px;
-    font-size: 13px;
-    line-height: 20px;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
 }
 .footer_left {
-    margin-right: 30px;
+  margin-right: 30px;
+}
+body {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+}
+
+.banner-title {
+  font-family: railway;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+.banner-subtitle {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.car-img {
+  opacity: 0.8;
 }

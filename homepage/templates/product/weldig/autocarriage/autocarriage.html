@@ -6,3 +6,15 @@
       <a class="nav-link" href="/product/weldig/autocarriage/mini-carriage">MINI CARRIAGE</a>
   </ul>
 </nav>
+
+<script>
+  const activeBar = document.querySelectorAll('.nav-link')
+  
+  activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+      item.classList.add('turnOn')
+    }else{
+      item.classList.remove('turnOn')
+    }
+  })
+</script>

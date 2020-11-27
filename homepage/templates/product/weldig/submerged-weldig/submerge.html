@@ -5,3 +5,15 @@
       <a class="nav-link active" href="/product/weldig/submerged-weldig/sw-41-carry-auto">SW-41 CARRY AUTO</a>
   </ul>
 </nav>
+
+<script>
+  const activeBar = document.querySelectorAll('.nav-link')
+  
+  activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+      item.classList.add('turnOn')
+    }else{
+      item.classList.remove('turnOn')
+    }
+  })
+</script>

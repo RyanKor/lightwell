@@ -32,7 +32,8 @@ urlpatterns = [
          TemplateView.as_view(template_name='./company/company_field.html')),
     path('company/access',
          TemplateView.as_view(template_name='./company/company_access.html')),
-    # 용접기 제품
+    
+    # 이산화탄소 용접기 제품
     path('product/weldig/co2-weldig/miracle-600a', TemplateView.as_view(
         template_name='./product/weldig/co2-weldig/miracle-600a.html')),
     path('product/weldig/co2-weldig/miracle-500a', TemplateView.as_view(
@@ -42,6 +43,7 @@ urlpatterns = [
     path('product/weldig/co2-weldig/ship-weldig',
          TemplateView.as_view(template_name='./product/weldig/co2-weldig/ship-weldig.html')),
 
+    # 오토캐리지 용접기 제품
     path('product/weldig/autocarriage/no-magnet',
          TemplateView.as_view(template_name='./product/weldig/autocarriage/no-magnet.html')),
     path('product/weldig/autocarriage/twin-carry-auto-unit', TemplateView.as_view(
@@ -51,6 +53,7 @@ urlpatterns = [
     path('product/weldig/autocarriage/mini-carriage', TemplateView.as_view(
         template_name='./product/weldig/autocarriage/mini-carriage.html')),
 
+    # 서브 머지드 용접기 경로 매핑
     path('product/weldig/submerged-weldig/lw-sub-ac-1500a', TemplateView.as_view(
         template_name='./product/weldig/submerged-weldig/lw-sub-ac-1500a.html')),
     path('product/weldig/submerged-weldig/lw-sub-dc-1500a', TemplateView.as_view(
@@ -58,6 +61,7 @@ urlpatterns = [
     path('product/weldig/submerged-weldig/sw-41-carry-auto', TemplateView.as_view(
         template_name='./product/weldig/submerged-weldig/sw-41-carry-auto.html')),
 
+    #티거 용접기 경로 매핑
     path('product/weldig/dc-tig-weldig/tig-300ep', TemplateView.as_view(
         template_name='./product/weldig/dc-tig-weldig/tig-300ep.html')),
     path('product/weldig/dc-tig-weldig/tig-500ep', TemplateView.as_view(
@@ -65,12 +69,21 @@ urlpatterns = [
     path('product/weldig/dc-tig-weldig/tiger201',
          TemplateView.as_view(template_name='./product/weldig/dc-tig-weldig/tiger201.html')),
 
+    # 아크 용접기 경로 매핑
     path('product/weldig/arch-weldig/apollo-180',
          TemplateView.as_view(template_name='./product/weldig/arch-weldig/apollo-180.html')),
     path('product/weldig/arch-weldig/apollo-200',
          TemplateView.as_view(template_name='./product/weldig/arch-weldig/apollo-200.html')),
     path('product/weldig/arch-weldig/s-200dp',
          TemplateView.as_view(template_name='./product/weldig/arch-weldig/s-200dp.html')),
+
+    # gouging_welding.html
+    path('product/weldig/gouging',
+        TemplateView.as_view(template_name='./product/weldig/gouging/gouging_welding.html')),
+
+    # 선상판넬 매핑 shipboard_panel.html
+    path('product/weldig/shipboard_panel',
+        TemplateView.as_view(template_name='./product/weldig/shipboard/shipboard_panel.html')),
 
     # 용접기 소모품 - CO2
     path('product/welding-expendable/expendable_co2',

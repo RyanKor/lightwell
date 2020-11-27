@@ -3,18 +3,7 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/company_access.css' %}">
 <div class="block">
-  <div class="menu">
-    <div class="menu_title">
-      <!-- <img src="/static/imgs/company_info/ceo_intro/sub_menu_01.gif" /> -->
-      회사소개
-    </div>
-    <div class="menu_list">
-      <div class="menu_list_button"><a href="/company" >대표자 인사말</a></div>
-      <div class="menu_list_button"><a href="/company/history">회사연혁</a> </div>
-      <div class="menu_list_button"><a href="/company/field">사업분야</a></div>
-      <div class="menu_list_button menu_select"><a href="/company/access">찾아오시는 길</a></div>
-    </div>
-  </div>
+{% include "./company.html" %}
   <div class="content">
     <div class="compyear_top">찾 / 아 / 오 / 시 / 는 / 길</div>
     <div class="address-text">주소: 경남 통영시 광도면 춘원2로 63-56</div>
