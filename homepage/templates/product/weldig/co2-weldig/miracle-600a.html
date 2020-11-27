@@ -1,48 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- bootstrap import -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-  <style>
-    .bg-primary {
-      background-color: #1565c0 !important;
-    }
-  </style>
-  <!-- bootstrap import 끝 -->
-  <title>Document</title>
-</head>
-
-<body>
-  <!-- 용접기 제품 - CO2 용접기 -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="/product/weldig/co2-weldig/miracle-600a">MIRACLE 600A</a>
-      </li>
-      <li class="nav-item">
+{% extends "../../../base.html" %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% include "../../left-navbar.html" %}
+<!-- 용접기 제품 - CO2 용접기 -->
+<div class="welding-product">
+  <div class="title"> CO2 용 / 접 / 기</div>
+  <nav class="co2-welding">
+        <a class="nav-link" href="/product/weldig/co2-weldig/miracle-600a">MIRACLE 600A</a>
         <a class="nav-link" href="/product/weldig/co2-weldig/miracle-500a">MIRACLE 500A</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/product/weldig/co2-weldig/miracle-350a">MIRACLE 350A</a>
-      </li>
-      <li class="nav-item">
+        <a class="nav-link active" href="/product/weldig/co2-weldig/miracle-350a">MIRACLE 350A</a>
         <a class="nav-link" href="/product/weldig/co2-weldig/ship-weldig">선상용접기</a>
-      </li>
     </ul>
   </nav>
   <tr>
     <td width="750">
-      <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+      <table id="Table_01" width="750" >
         <tbody>
           <tr>
             <td rowspan="3">
@@ -54,13 +27,12 @@
           </tr>
           <tr>
             <td>
-              <img src="/static/imgs/product_info/welding_machine/CO2/miracle600A/.gif" width="466" height="45" alt="">
+              <img src="/static/imgs/product_info/welding_machine/CO2/miracle600A/sub2_m_06.gif" width="466" height="45" alt="">
             </td>
           </tr>
           <tr>
             <td width="466" height="325" valign="top" background="images/sub2_m_07.gif">
-
-              <p align="justify" style="margin-right:30; margin-left:20;">MIRACLE 500A/600A 시리즈는 시뮬레이터 제어 방식을 사용함으로써, 최소
+              <p align="justify" style="margin-right:30; margin-left:1rem;">MIRACLE 500A/600A 시리즈는 시뮬레이터 제어 방식을 사용함으로써, 최소
                 전류에서 최대 전류까지 연속적인 모든 용접 전류 범위에서 뛰어나고 안정된 아크 특성 및 정전압 특성을 얻을 수 있습니다.
                 <br>또한, 용접기의 출력 측 전력을 차단하는 제어형 용접 전력 공급장치에는, 아크가 없는 기간에는, 1차 측에서 무부하 전력이 소모됨에 따라 토치 스위치 작동에 의해 자동적으로
                 동작되는 전력 절감 회로를 구비함으로써, 아크가 없는 기간 동안의 불필요한 무부하 전력을 절감 할 수 있습니다.</p>
@@ -74,7 +46,7 @@
           <tr>
             <td colspan="2">
 
-              <table cellpadding="0" cellspacing="0" width="93%" style="margin-left:23;">
+              <table cellpadding="0" cellspacing="0" width="100%" style="margin-left:23;">
                 <tbody>
                   <tr>
                     <td width="347"
@@ -271,7 +243,5 @@
       </table>
     </td>
   </tr>
-
-</body>
-
-</html>
+</div>
+{% endblock %}
