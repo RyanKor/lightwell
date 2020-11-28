@@ -124,7 +124,7 @@ urlpatterns = [
     path('product/cutter/flame_planer',
         TemplateView.as_view(template_name='product/cutter/flame_planer.html')),
     path('product/cutter/high_frequency_bending_machine',
-        TemplateView.as_view(template_name='product/cutter/high_frequency_bending_machine.html')),
+        TemplateView.as_view(template_name='product/cutter/high_frequency_bending_mahcine.html')),
     path('product/cutter/pipe_coaster',
         TemplateView.as_view(template_name='product/cutter/pipe_coaster.html')),
     path('product/cutter/pipe_gas_cutting_machine',
