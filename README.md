@@ -1,20 +1,17 @@
-## TODO
-< main 화면 > 
+## How to deploy
+기술 stack: Python django
 
-- [ ] 인증서 2개
-- [ ] 수출국가 6개 나라
-- [ ] 국내외 협력사 사진
-- [ ] 라이트웰 로고
+```shell
+# install django
+$ pip3 install django
 
-- [ ] 홈페이지 이름
+# deploy at the root path of the project (with manage.py)
+$ pm2 start "python3 manage.py runserver 서브도메인포트" --name "서브도메인"
+```
 
-< Error Handling Page >
+## html 파일 변경 방법
+* homepage > templates 폴더에서 해당 경로에 해당하는 html파일 변경
+* lightwell > urls.py 에서 html의 경로 설정
 
-- [ ] 400, 403, 404, 500 별도 안내 페이지 제작 필요
-- [ ] 배포 시 DEBUG 설정 변경하기
-
-
-## Project Structure
-
-- Project Folder : lightwell
-- Application Folder : homepage
+## static
+css, fonts, imgs, pdf 파일 보관
