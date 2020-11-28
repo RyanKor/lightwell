@@ -133,4 +133,12 @@ urlpatterns = [
         TemplateView.as_view(template_name='product/cutter/pipe_rotator.html')),    
     path('product/cutter/positioner',
         TemplateView.as_view(template_name='product/cutter/positioner.html')),    
+
+    # 카탈로그
+    path('catalogue',
+        TemplateView.as_view(template_name='catalogue/catalogue.html')), 
+
+    # 연락처
+    path('contact',
+        TemplateView.as_view(template_name='contact/contact.html')), 
 ]
