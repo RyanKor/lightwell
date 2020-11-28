@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import (handler400, handler403, handler404, handler500) # Error Handling
+from django.conf.urls import (
+    handler400, handler403, handler404, handler500)  # Error Handling
 from django.views.generic import TemplateView
 from homepage import views
 
@@ -25,14 +26,16 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='./main.html')),
     # 회사소개
     path('company', TemplateView.as_view(
-        template_name='./company/company_info.html')), # 회사 소개
+        template_name='./company/company_info.html')),  # 회사 소개
     path('company/history',
          TemplateView.as_view(template_name='./company/company_history.html')),
     path('company/field',
          TemplateView.as_view(template_name='./company/company_field.html')),
+    path('company/certificate', TemplateView.as_view(
+        template_name='./company/company_cert.html')),  # 회사 소개
     path('company/access',
          TemplateView.as_view(template_name='./company/company_access.html')),
-    
+
     # 이산화탄소 용접기 제품
     path('product/weldig/co2-weldig/miracle-600a', TemplateView.as_view(
         template_name='./product/weldig/co2-weldig/miracle-600a.html')),
@@ -61,7 +64,7 @@ urlpatterns = [
     path('product/weldig/submerged-weldig/sw-41-carry-auto', TemplateView.as_view(
         template_name='./product/weldig/submerged-weldig/sw-41-carry-auto.html')),
 
-    #티거 용접기 경로 매핑
+    # 티거 용접기 경로 매핑
     path('product/weldig/dc-tig-weldig/tig-300ep', TemplateView.as_view(
         template_name='./product/weldig/dc-tig-weldig/tig-300ep.html')),
     path('product/weldig/dc-tig-weldig/tig-500ep', TemplateView.as_view(
@@ -79,11 +82,11 @@ urlpatterns = [
 
     # gouging_welding.html
     path('product/weldig/gouging',
-        TemplateView.as_view(template_name='./product/weldig/gouging/gouging_welding.html')),
+         TemplateView.as_view(template_name='./product/weldig/gouging/gouging_welding.html')),
 
     # 선상판넬 매핑 shipboard_panel.html
     path('product/weldig/shipboard_panel',
-        TemplateView.as_view(template_name='./product/weldig/shipboard/shipboard_panel.html')),
+         TemplateView.as_view(template_name='./product/weldig/shipboard/shipboard_panel.html')),
 
     # 용접기 소모품 - CO2
     path('product/welding-expendable/expendable_co2',
@@ -108,37 +111,37 @@ urlpatterns = [
 
     # 절단기 제품
     path('product/cutter/2d_plasma',
-        TemplateView.as_view(template_name='product/cutter/2d_plasma.html')),
+         TemplateView.as_view(template_name='product/cutter/2d_plasma.html')),
     path('product/cutter/3d_link_plasma',
-        TemplateView.as_view(template_name='product/cutter/3d_link_plasma.html')),
+         TemplateView.as_view(template_name='product/cutter/3d_link_plasma.html')),
     path('product/cutter/bending_machine',
-        TemplateView.as_view(template_name='product/cutter/bending_machine.html')),
+         TemplateView.as_view(template_name='product/cutter/bending_machine.html')),
     path('product/cutter/cnc_gas',
-        TemplateView.as_view(template_name='product/cutter/cnc_gas.html')),
+         TemplateView.as_view(template_name='product/cutter/cnc_gas.html')),
     path('product/cutter/cold_rolling',
-        TemplateView.as_view(template_name='product/cutter/cold_rolling.html')),
+         TemplateView.as_view(template_name='product/cutter/cold_rolling.html')),
     path('product/cutter/cutting_machine',
-        TemplateView.as_view(template_name='product/cutter/cutting_machine.html')),
+         TemplateView.as_view(template_name='product/cutter/cutting_machine.html')),
     path('product/cutter/elbow_cutting_machine',
-        TemplateView.as_view(template_name='product/cutter/elbow_cutting_machine.html')),
+         TemplateView.as_view(template_name='product/cutter/elbow_cutting_machine.html')),
     path('product/cutter/flame_planer',
-        TemplateView.as_view(template_name='product/cutter/flame_planer.html')),
+         TemplateView.as_view(template_name='product/cutter/flame_planer.html')),
     path('product/cutter/high_frequency_bending_machine',
-        TemplateView.as_view(template_name='product/cutter/high_frequency_bending_mahcine.html')),
+         TemplateView.as_view(template_name='product/cutter/high_frequency_bending_mahcine.html')),
     path('product/cutter/pipe_coaster',
-        TemplateView.as_view(template_name='product/cutter/pipe_coaster.html')),
+         TemplateView.as_view(template_name='product/cutter/pipe_coaster.html')),
     path('product/cutter/pipe_gas_cutting_machine',
-        TemplateView.as_view(template_name='product/cutter/pipe_gas_cutting_machine.html')),
+         TemplateView.as_view(template_name='product/cutter/pipe_gas_cutting_machine.html')),
     path('product/cutter/pipe_rotator',
-        TemplateView.as_view(template_name='product/cutter/pipe_rotator.html')),    
+         TemplateView.as_view(template_name='product/cutter/pipe_rotator.html')),
     path('product/cutter/positioner',
-        TemplateView.as_view(template_name='product/cutter/positioner.html')),    
+         TemplateView.as_view(template_name='product/cutter/positioner.html')),
 
     # 카탈로그
     path('catalogue',
-        TemplateView.as_view(template_name='catalogue/catalogue.html')), 
+         TemplateView.as_view(template_name='catalogue/catalogue.html')),
 
     # 연락처
     path('contact',
-        TemplateView.as_view(template_name='contact/contact.html')), 
+         TemplateView.as_view(template_name='contact/contact.html')),
 ]
