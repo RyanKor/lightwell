@@ -254,7 +254,11 @@ nav {
 }
 .company-img-big{
   padding: 5px;
-  height: 60px !important;
+  height: 34px !important;
+}
+.company-img-sm{
+  padding: 5px;
+  height: 47px !important;
 }
 .img1,
 .flag {
@@ -274,6 +278,26 @@ nav {
   height: 30%;
 }
 .company-img > img {
+  width: 30%;
+  max-height: 80%;
+}
+.company-img-big {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+.company-img-big > img {
+  width: 30%;
+  max-height: 80%;
+}
+.company-img-sm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+.company-img-sm > img {
   width: 30%;
   max-height: 80%;
 }
