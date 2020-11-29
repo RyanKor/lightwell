@@ -159,4 +159,13 @@ urlpatterns = [
         template_name='./en/company/company_cert.html')),  # 회사 소개
     path('en/company/access',
          TemplateView.as_view(template_name='./en/company/company_access.html')),
+
+
+    # 카탈로그
+    path('en/catalogue',
+         TemplateView.as_view(template_name='./en/catalogue/catalogue.html')),
+
+    # 연락처
+    path('en/contact',
+         TemplateView.as_view(template_name='./en/contact/contact.html')),
 ]
