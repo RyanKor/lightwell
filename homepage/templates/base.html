@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 
@@ -29,13 +32,13 @@
             </div>
             <div class="right-menu">
                 <li class="nav-item dropdown">
-                    <button class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Language
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/">🇰🇷 Korean</a>
-                        <a class="dropdown-item" href="#">🇺🇸 English</a>
+                        <a class="dropdown-item" href="/en">🇺🇸 English</a>
                     </div>
                 </li>
             </div>
@@ -48,10 +51,10 @@
                 <a href="/product/weldig/co2-weldig/miracle-600a" class="nav_menu_bar_title">제품</a>
             </div>
             <div class="nav_menu_bar right-border">
-                <a href="#" class="nav_menu_bar_title">카탈로그</a>
+                <a href="/catalogue" class="nav_menu_bar_title">카탈로그</a>
             </div>
             <div class="nav_menu_bar right-border">
-                <a href="#" class="nav_menu_bar_title">연락처</a>
+                <a href="/contact" class="nav_menu_bar_title">연락처</a>
             </div>
         </nav>
         <div class="main_content">
@@ -62,7 +65,7 @@
             <hr>
             <div class="site-link">
                 <a href="/" class="footer_left">Home</a>
-                <a href="#" class="footer_center">Contact</a>
+                <a href="/contact" class="footer_center">Contact</a>
             </div>
             <div class="contact-info">
                 <div> 상호 : (주)라이트웰 /사업자 등록번호 : 612-81-18729</div>

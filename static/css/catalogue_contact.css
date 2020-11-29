@@ -1,0 +1,87 @@
+.catalogue_table {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.catalogue_catalogue {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalogue_cat_title {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.catalogue_title_comp {
+  width: 390px;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  color: #06265b;
+  margin-bottom: 5px;
+}
+.catalogue_title_prod {
+  width: 270px;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  color: #06265b;
+  margin-bottom: 5px;
+}
+.catalogue_comp {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3f3fd;
+  padding: 20px;
+}
+
+.catalogue_prod {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  background-color:#e3f3fd;
+  padding: 20px;
+}
+
+.catalogue_a {
+  margin-top: 10px;
+}
+.catalogue_comp_img {
+  width: 350px;
+}
+.catalogue_prod_img {
+  width: 230px;
+}
+.cat_top {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 60px auto 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact_top{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.contact_sns {
+  display: flex;
+  padding-top: 10px;
+}
+
+.contact_sns_img {
+  height: 70px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+}
+
+.contact_p {
+  font-size: 17px;
+  line-height: 18px;
+}
