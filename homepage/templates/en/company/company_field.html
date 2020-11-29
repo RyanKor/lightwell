@@ -1,21 +1,12 @@
 {% extends '../base.html' %}
+{% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/company_field.css' %}">
 <div class="block">
-  <div class="menu">
-    <div class="menu_title">
-      <!-- <img src="/static/imgs/company_info/ceo_intro/sub_menu_01.gif" /> -->
-      회사소개
-    </div>
-    <div class="menu_list">
-      <div class="menu_list_button">대표자 인사말</div>
-      <div class="menu_list_button">회사연혁</div>
-      <div class="menu_list_button menu_select">사업분야</div>
-      <div class="menu_list_button">찾아오시는 길</div>
-    </div>
-  </div>
+  {% include "./company.html" %}
   <div class="content">
-    <div class="compyear_top">사 / 업 / 분 / 야</div>
-    <img src="/static/imgs/company_info/business_field/sub_m3_04.gif" width="750" height="555" border="0">
+    <div class="compyear_top">BUSINESS AREAS</div>
+    <img src="{% static 'imgs/en/company/sub_m3_04.gif' %}" width="750" height="555" border="0">
   </div>
 </div>
 {% endblock %}

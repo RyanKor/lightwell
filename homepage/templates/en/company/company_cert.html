@@ -1,0 +1,41 @@
+{% extends '../base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/company_field.css' %}">
+<div class="block">
+  {% include "./company.html" %}
+  <div class="content">
+    <div class="compyear_top">CERTIFICATION</div>
+    <table id="Table_01" class="catalogue_table">
+      <tr>
+        <td width="750">
+          <img src="{% static 'imgs/tech_sit/sub3_m_01.gif' %}">
+        </td>
+      </tr>
+      <tr>
+        <td width="750">
+          <img src="{% static 'imgs/tech_sit/sub3_m_05.gif' %}">
+        </td>
+      </tr>
+      <tr>
+        <td width="750">
+          <p><img src="{% static 'imgs/tech_sit/sub3_m_02.gif' %}"></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="750">
+          <p><img src="{% static 'imgs/tech_sit/sub3_m_03.gif' %}"></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="750">
+          <p>
+            <img src="{% static 'imgs/tech_sit/sub3_m_04.gif' %}">
+            <img src="{% static 'imgs/tech_sit/sub3_m_06.gif' %}">
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+{% endblock %}

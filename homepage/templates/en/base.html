@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>라이트웰</title>
+    <title>LIGHTWEL</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -14,360 +14,71 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <style>
-        .body {
-            margin: 10px auto;
-            min-width: 1024px;
-            max-width: 1024px;
-        }
-
-        .header_main {
-            height: 80px;
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 1rem;
-            margin: 2px auto;
-            min-width: 1024px;
-            max-width: 1024px;
-        }
-
-        .header_logo {
-            width: 80px;
-            height: 100%;
-            margin-right: 5px;
-            border: 1px solid black;
-            background-color: #1565c0;
-        }
-
-        .header_content {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-        }
-
-        .header_row1 {
-            color: #06265b;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .header_row2 {
-            color: #020d1f;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .header_company {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .header_menu {
-            display: flex;
-            flex-direction: column;
-            width: 250px;
-            align-items: flex-end;
-            justify-content: center;
-        }
-
-        .header_menu_lang {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-            width: 100%;
-            margin-bottom: 4px;
-        }
-
-        .header_menu_lang_flag {
-            width: 40px;
-            height: 25px;
-            margin-right: 5px;
-            background-color: #020d1f;
-        }
-
-        .header_menu_lang_select {
-            width: 80px;
-        }
-
-        .header_menu_search {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        .search {
-            font-size: 12px;
-            width: 120px;
-        }
-
-        .btn {
-            text-align: center;
-            font-size: 12px;
-        }
-
-        .footer_box {
-            display: flex;
-            flex-direction: row;
-            margin: 2px auto;
-            min-width: 1024px;
-            max-width: 1024px;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .footer_box div {
-            /* padding: 5px; */
-            height: 20px;
-            width: 120px;
-            text-align: center;
-            margin-right: 3px;
-            font-size: 12px;
-            border: solid 1px black;
-        }
-
-        /* main.html */
-        .nav_menu {
-            margin: 2px auto;
-            display: flex;
-            flex-direction: row;
-            height: 30px;
-            justify-content: space-between;
-            background-color: #06265b;
-            min-width: 1024px;
-            max-width: 1024px;
-        }
-
-        .nav_menu_bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        .nav_menu_bar_title {
-            color: white;
-            text-align: center;
-            width: 100%;
-            height: 80%;
-            border-right: solid 0.5px white;
-            /* line-height: 10px; */
-        }
-
-        .banner {
-            height: 260px;
-            width: 100%;
-            margin-bottom: 10px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .banner_info {
-            width: 30%;
-        }
-
-        .banner_img {
-            width: 100%;
-            border: 1px solid blue;
-        }
-
-        .nav_bar {
-            display: flex;
-            flex-direction: row;
-            width: 90%;
-            height: 3rem;
-            border: 1px solid black;
-            justify-content: space-between;
-            background-color: #1565c0;
-        }
-
-        .main_bar {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 250px;
-            /* background-color: #1565c0;ㄴ */
-        }
-
-        .main_bar_info {
-            display: flex;
-            flex-direction: column;
-            width: 19%;
-            height: 100%;
-            border: 1px solid black;
-        }
-
-        .main_bar_product {
-            width: 27%;
-            height: 100%;
-            border: 1px solid black;
-        }
-
-        .main_title {
-            height: 23px;
-            width: 100%;
-            text-align: center;
-            color: rgb(215, 216, 195);
-            background-color: #0d47a1;
-            border-right: solid 0.5px rgb(215, 216, 195);
-            /* line-height: 10px; */
-        }
-
-        .main_content {
-            font-size: 10px;
-        }
-
-        /*company*/
-        .company_img {
-            height: 100%;
-            width: 28%;
-            max-width: 280px;
-            min-width: 140px;
-        }
-
-        .company_info {
-            width: 72%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .company_info_img {
-            width: 487;
-            height: 105;
-        }
-
-        .company_info_word {
-            width: 100%;
-            padding: 5px 10px;
-        }
-
-        .compyear_top {
-            width: 100%;
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 40px;
-            color: black;
-            border-bottom: 3px solid #dbdbdb;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        /*universal */
-        .block {
-            width: 100%;
-            border: 1px solid black;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .menu {
-            height: 100%;
-            width: 23%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .menu_title {
-            font-size: 20px;
-            padding: 10px;
-            font-weight: bold;
-            color: #06265b;
-        }
-
-        .menu_list {}
-
-        .menu_list_button {
-            font-size: 16px;
-            border-bottom: 1px solid #dbdbdb;
-            text-align: right;
-            margin-right: 5%;
-            margin-bottom: 10px;
-            padding: 2px;
-        }
-
-        .menu_select {
-            border: solid 2px #06265b;
-        }
-
-        .content {
-            height: 100%;
-            width: 77%;
-            border: 1px solid black;
-            padding: 20px;
-            min-width: 780px;
-        }
-
-        .title_last {
-            border-right: none;
-            /* line-height: 10px; */
-        }
-
-        .bg-primary {
-            background-color: #1565c0 !important;
-        }
-    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 
 <body>
-    <div class="header_main">
-        <div class="header_company">
-            <div class="header_logo"></div>
-            <div class="header_content">
-                <div class="header_row1">Lightwell Welding Machine</div>
-                <div class="header_row2">Made in Korea since 2004</div>
-            </div>
-        </div>
-        <div class="header_menu">
-            <div class="header_menu_lang">
-                <div class="header_menu_lang_flag">
-                </div>
-                <select name="lang" id="lang" class="header_menu_lang_select">
-                    <option value="korean">한국어</option>
-                    <option value="eng">english</option>
-                </select>
-            </div>
-            <div class="header_menu_search">
-                <div class="search">
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
-                        placeholder="제품명 입력">
-                </div>
-                <div>
-                    <button class="btn btn-outline-secondary">검색</button>
+    <div>
+        <header>
+            <div class="left-menu">
+                <a href="/en"><img class="logo" src="{% static 'imgs/lightwel.jpg' %}" alt="logo"></a>
+                <div class="company-slogan">
+                    <div class="slogan-text">
+                        <strong> Made in Korea <br>Since 2004</strong>
+                    </div>
                 </div>
             </div>
+            <div class="right-menu">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/">🇰🇷 Korean</a>
+                        <a class="dropdown-item" href="/en">🇺🇸 English</a>
+                    </div>
+                </li>
+            </div>
+        </header>
+        <nav class="nav_menu">
+            <div class="nav_menu_bar right-border">
+                <a href="/en/company" class="nav_menu_bar_title">Company</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="/en/product/weldig/co2-weldig/miracle-600a" class="nav_menu_bar_title">Product</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="/en/catalogue" class="nav_menu_bar_title">Catalogue</a>
+            </div>
+            <div class="nav_menu_bar right-border">
+                <a href="/en/contact" class="nav_menu_bar_title">Contact</a>
+            </div>
+        </nav>
+        <div class="main_content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="footer_box">
+            <hr>
+            <div class="site-link">
+                <a href="/en" class="footer_left">Home</a>
+                <a href="/en/contact" class="footer_center">Contact</a>
+            </div>
+            <div class="contact-info">
+                <div> LIGHTWEL CO., LTD / Company Registration Number : 612-81-18729</div>
+                <div> 63-56, Chunwon 2-ro, Gwangdo-myeon, Tongyeong-si, Gyeongsangnam-do, Republic of Korea </div>
+                <div> CEO : Lucas CHO  T . 82-10-6646-0706 </div>
+                <div> CS : 82-55-647-0703 / FAX . 82-55-646-0706 </div>
+                <div> Email : lightwel@lightwel.co.kr </div>
+        
+                <div> Office hour : Monday-Friday (09h 00 ~ 18h 00) Closed on public holidays </div>
+              </div>
         </div>
     </div>
-    <div class="nav_menu">
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">회사소개</div>
-        </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">제품</div>
-        </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">카탈로그</div>
-        </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title">연락처</div>
-        </div>
-        <div class="nav_menu_bar">
-            <div class="nav_menu_bar_title title_last">SNS</div>
-        </div>
-    </div>
-    <div class="body">
-        {% block content %}
-        {% endblock %}
-    </div>
-    <div class="footer_box">
-        <div class="footer_left">법적고지</div>
-        <div class="footer_center">개인정보처리방침</div>
-        <div class="footer_right">문의</div>
-    </div>
+
 </body>
 
 </html>

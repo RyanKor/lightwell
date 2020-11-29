@@ -1,0 +1,20 @@
+<div class="title"> CO2 WELDING MACHINE</div>
+<nav class="co2-welding">
+      <a class="nav-link" href="/en/product/weldig/co2-weldig/miracle-600a">MIRACLE 600A</a>
+      <a class="nav-link" href="/en/product/weldig/co2-weldig/miracle-500a">MIRACLE 500A</a>
+      <a class="nav-link" href="/en/product/weldig/co2-weldig/miracle-350a">MIRACLE 350A</a>
+      <a class="nav-link" href="/en/product/weldig/co2-weldig/ship-weldig">Shipboard Welding Machine</a>
+  </ul>
+</nav>
+
+<script>
+  const activeBar = document.querySelectorAll('.nav-link')
+  
+  activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+      item.classList.add('turnOn')
+    }else{
+      item.classList.remove('turnOn')
+    }
+  })
+</script>
