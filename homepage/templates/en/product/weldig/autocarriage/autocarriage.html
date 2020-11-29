@@ -1,0 +1,20 @@
+<div class="title"> AUTO CARRIAGE</div>
+<nav class="co2-welding">
+      <a class="nav-link" href="/en/product/weldig/autocarriage/no-magnet">Non-Magnetic</a>
+      <a class="nav-link" href="/en/product/weldig/autocarriage/twin-carry-auto-unit">TWIN CARRY AUTO UNIT</a>
+      <a class="nav-link active" href="/en/product/weldig/autocarriage/magnet">Magnetic</a>
+      <a class="nav-link" href="/en/product/weldig/autocarriage/mini-carriage">MINI CARRIAGE</a>
+  </ul>
+</nav>
+
+<script>
+  const activeBar = document.querySelectorAll('.nav-link')
+  
+  activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+      item.classList.add('turnOn')
+    }else{
+      item.classList.remove('turnOn')
+    }
+  })
+</script>

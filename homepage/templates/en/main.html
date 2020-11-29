@@ -1,35 +1,102 @@
-{% extends './base.html' %}
+{% extends './base_main.html' %}
+{% load static %}
 {% block content %}
-    <div class="banner">
-        <div class="banner_info">
-            <div class="main_title">국내외 협력사</div>
-            <div class="main_content">이미지</div>
-        </div>
-        <div class="banner_img">
-        </div>
-    </div>
-    <div class="main_bar">
-        <div class="main_bar_info">
-            <div class="nav1_1">
-                <div class="main_title">인증서</div>
-                <div class="main_content">이미지</div>
-            </div>
-            <div class="nav1_2">
-                <div class="main_title title_last">수출 국가</div>
-                <div class="main_content">이미지</div>
+<div class="upper">
+    <div class="product">
+        <div class="title">Welding M/C</div>
+        <div class="products">
+            <div class="content">
+                <a href="/en/product/weldig/co2-weldig/miracle-600a">CO2 WELDING MACHINE</a>
+                <a href="/en/product/weldig/gouging">GOUGING WELDING MACHINE</a>
+                <a href="/product/weldig/autocarriage/no-magnet">AUTO CARRIAGE</a>
+                <a href="/product/weldig/submerged-weldig/lw-sub-ac-1500a">SUBMERGED WELDING MACHINE</a>
+                <a href="/product/weldig/dc-tig-weldig/tig-300ep">DC TIG WELDING MACHINE</a>
+                <a href="/product/weldig/arch-weldig/apollo-180">ARC WELDING MACHINE</a>
+                <a href="/en/product/weldig/shipboard_panel">SHIPBOARD PANEL</a>
             </div>
         </div>
-        <div class="main_bar_product">
-            <div class="main_title">용접기</div>
-            <div class="main_content">이미지</div>
-        </div>
-        <div class="main_bar_product">
-            <div class="main_title">용접기 소모품</div>
-            <div class="main_content">이미지</div>
-        </div>
-        <div class="main_bar_product">
-            <div class="main_title title_last">절단기</div>
-            <div class="main_content">이미지</div>
+    </div>
+    <div class="welding-box">
+        <div class="title" style="font-size: 0.96rem;">Expendables of Weliding M/C</div>
+        <div class="welding">
+            <div class="content">
+                <a href="/en/product/welding-expendable/expendable_co2">CO2</a>
+                <a href="/en/product/welding-expendable/expendable_auto">AUTO CARRIAGE</a>
+                <a href="/en/product/welding-expendable/expendable_tig">TIG</a>
+                <a href="/en/product/welding-expendable/expendable_regulator">REGULATOR</a>
+            </div>
         </div>
     </div>
+    <div class="cutter-box">
+        <div class="title">Cutting M/C</div>
+        <div class="cutter">
+            <div class="content-container">
+                <div class="content content-cutter">
+                    <a href="/product/cutter/2d_plasma">2D PLASMA</a>
+                    <a href="/product/cutter/3d_link_plasma">3D LINK PLASMA</a>
+                    <a href="/product/cutter/cnc_gas">CNC GAS CUTTING MACHINE</a>
+                    <a href="/product/cutter/cold_rolling">COLD ROLLING BENDING MACHINE</a>
+                    <a href="/product/cutter/high_frequency_bending_machine">HIGH FREQUENCY BENDING MACHINE</a>
+                    <a></a>
+                </div>
+                <div class="content content-cutter">
+                    <a href="/product/cutter/flame_planer">FLAME PLANER</a>
+                    <a href="/product/cutter/pipe_coaster">PIPE COASTER</a>
+                    <a href="/product/cutter/pipe_rotator">PIPE ROTATOR</a>
+                    <a href="/product/cutter/pipe_gas_cutting_machine">PIPE GAS CUTTING MACHINE</a>
+                    <a href="/product/cutter/positioner">POSITIONER</a>
+                    <a href="/product/cutter/elbow_cutting_machine">ELBOW CUTTING MACHINE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="certificate">
+        <div class="title black-title">Exporting Country</div>
+        <div class="export-imgs">
+            <div class="flag">
+                <img src="{% static 'imgs/country/china.png' %}" alt="China">
+                <img src="{% static 'imgs/country/japan.png' %}" alt="Japan">
+                <img src="{% static 'imgs/country/vietnam.png' %}" alt="Vietnam">
+            </div>
+            <div class="flag">
+                <img src="{% static 'imgs/country/angola.png' %}" alt="Angola">
+                <img src="{% static 'imgs/country/phil.png' %}" alt="Philipine">
+                <img src="{% static 'imgs/country/brazil.png' %}" alt="Brazil">
+            </div>
+        </div>
+    </div>
+    <a href="/company/certificate" class="export">
+        <div class="title black-title">Certification</div>
+        <div class="certificate-imgs">
+            <div class="img1">
+                <img src="{% static 'imgs/certificate/ce.png' %}" alt="CE">
+                <img src="{% static 'imgs/certificate/iso.png' %}" alt="ISO">
+            </div>
+            <div class="img1">
+                <img src="{% static 'imgs/government/gov.png' %}" alt="중기청">
+                <img src="{% static 'imgs/government/patent.png' %}" alt="특허청">
+            </div>
+        </div>
+    </a>
+    <div class="partnership">
+        <div class="title black-title">Partners</div>
+        <div class="partner-company">
+            <img class="company-img-big" src="{% static 'imgs/partner/1.png' %}">
+            <img class="company-img-big" src="{% static 'imgs/partner/2.jpg' %}" alt="동원중공업">
+            <img class="company-img-big" src="{% static 'imgs/partner/3.jpg' %}" alt="삼강">
+            <img class="company-img" src="{% static 'imgs/partner/5.jpeg' %}" alt="Sungdong">
+            <img class="company-img" src="{% static 'imgs/partner/6.jpg' %}">
+            <img class="company-img" src="{% static 'imgs/partner/7.png' %}">
+            <img class="company-img" src="{% static 'imgs/partner/8.jpg' %}">
+            <img class="company-img" src="{% static 'imgs/partner/9.jpeg' %}">
+            <img class="company-img" src="{% static 'imgs/partner/4.jpg' %}" alt="삼성중공업">
+            <img class="company-img" src="{% static 'imgs/partner/10.png' %}" alt="현대">
+            <img class="company-img" src="{% static 'imgs/partner/12.jpg' %}" alt="HSG중공업">
+            <img class="company-img" src="{% static 'imgs/partner/13.jpg' %}">
+            <img class="company-img" src="{% static 'imgs/partner/11.png' %}" alt="현대중공업">
+        </div>
+    </div>
+</div>
 {% endblock %}

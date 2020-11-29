@@ -1,0 +1,18 @@
+<div class="title"> DC TIG WELDER</div>
+<nav class="co2-welding">
+      <a class="nav-link" href="/product/weldig/dc-tig-weldig/tig-300ep">TIG 300EP</a>
+      <a class="nav-link" href="/product/weldig/dc-tig-weldig/tig-500ep">TIG 500EP</a>
+      <a class="nav-link active" href="/product/weldig/dc-tig-weldig/tiger201">TIGER 201</a>
+  </ul>
+</nav>
+
+<script>
+  const activeBar = document.querySelectorAll('.nav-link')
+  activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+      item.classList.add('turnOn')
+    }else{
+      item.classList.remove('turnOn')
+    }
+  })
+</script>
