@@ -227,6 +227,35 @@ urlpatterns = [
     path('en/product/welding-expendable/expendable_regulator',
          TemplateView.as_view(template_name='./en/product/welding-expendable/expendable_regulator.html')),
 
+    ##### 절단기 제품 영문 경로 ###
+    path('en/product/cutter/2d_plasma',
+        TemplateView.as_view(template_name='./en/product/cutter/2d_plasma.html')),
+    path('en/product/cutter/3d_link_plasma',
+         TemplateView.as_view(template_name='./en/product/cutter/3d_link_plasma.html')),
+    path('en/product/cutter/bending_machine',
+         TemplateView.as_view(template_name='./en/product/cutter/bending_machine.html')),
+    path('en/product/cutter/cnc_gas',
+         TemplateView.as_view(template_name='./en/product/cutter/cnc_gas.html')),
+    path('en/product/cutter/cold_rolling',
+         TemplateView.as_view(template_name='./en/product/cutter/cold_rolling.html')),
+    path('en/product/cutter/cutting_machine',
+         TemplateView.as_view(template_name='./en/product/cutter/cutting_machine.html')),
+    path('en/product/cutter/elbow_cutting_machine',
+         TemplateView.as_view(template_name='./en/product/cutter/elbow_cutting_machine.html')),
+    path('en/product/cutter/flame_planer',
+         TemplateView.as_view(template_name='./en/product/cutter/flame_planer.html')),
+    path('en/product/cutter/high_frequency_bending_machine',
+         TemplateView.as_view(template_name='./en/product/cutter/high_frequency_bending_mahcine.html')),
+    path('en/product/cutter/pipe_coaster',
+         TemplateView.as_view(template_name='./en/product/cutter/pipe_coaster.html')),
+    path('en/product/cutter/pipe_gas_cutting_machine',
+         TemplateView.as_view(template_name='./en/product/cutter/pipe_gas_cutting_machine.html')),
+    path('en/product/cutter/pipe_rotator',
+         TemplateView.as_view(template_name='./en/product/cutter/pipe_rotator.html')),
+    path('en/product/cutter/positioner',
+         TemplateView.as_view(template_name='./en/product/cutter/positioner.html')),
+
+
 
     ########## 절단기 소모품 경로 ###########
     # 절단기 소모품
