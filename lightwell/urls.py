@@ -149,4 +149,14 @@ urlpatterns = [
 ############################# 이 아래부터 영문 페이지 url mapping #############################
     # 메인화면
     path('en', TemplateView.as_view(template_name='./en/main.html')),
+    path('en/company', 
+         TemplateView.as_view(template_name='./en/company/company_info.html')),  # 회사 소개
+    path('en/company/history',
+         TemplateView.as_view(template_name='./en/company/company_history.html')),
+    path('en/company/field',
+         TemplateView.as_view(template_name='./en/company/company_field.html')),
+    path('en/company/certificate', TemplateView.as_view(
+        template_name='./en/company/company_cert.html')),  # 회사 소개
+    path('en/company/access',
+         TemplateView.as_view(template_name='./en/company/company_access.html')),
 ]
