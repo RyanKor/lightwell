@@ -215,6 +215,20 @@ urlpatterns = [
 
     ########## 용접기 제품 끝 ###########
 
+    #용접기 소모품
+    # 용접기 소모품 - CO2
+    path('en/product/welding-expendable/expendable_co2',
+         TemplateView.as_view(template_name='./en/product/welding-expendable/expendable_co2.html')),
+    # 용접기 소모품 - Auto Carriage
+    path('en/product/welding-expendable/expendable_auto',
+         TemplateView.as_view(template_name='./en/product/welding-expendable/expendable_auto_carriage.html')),
+    # 용접기 소모품 - TIG
+    path('en/product/welding-expendable/expendable_tig',
+         TemplateView.as_view(template_name='./en/product/welding-expendable/expendable_tig.html')),
+    # 용접기 소모품 - Regulator
+    path('en/product/welding-expendable/expendable_regulator',
+         TemplateView.as_view(template_name='./en/product/welding-expendable/expendable_regulator.html')),
+
 
     ########## 절단기 소모품 경로 ###########
     # 절단기 소모품
