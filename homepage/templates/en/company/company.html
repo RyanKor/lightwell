@@ -1,0 +1,25 @@
+<div class="menu">
+    <div class="menu_title">
+      <!-- <img src="/static/imgs/company_info/ceo_intro/sub_menu_01.gif" /> -->
+      LIGHTWEL Company
+    </div>
+    <div class="menu_list">
+      <div class="menu_list_button"><a href="/company" >CEO'S GREETINGS</a></div>
+      <div class="menu_list_button"><a href="/company/history">HISTORY</a> </div>
+      <div class="menu_list_button"><a href="/company/field">BUSINESS AREAS</a></div>
+      <div class="menu_list_button"><a href="/company/certificate">CERTIFICATION</a></div>
+      <div class="menu_list_button"><a href="/company/access">MAP</a></div>
+    </div>
+  </div>
+
+<script>
+const activeBar = document.querySelectorAll('.menu_list_button > a')
+
+activeBar.forEach(item =>{
+    if (item.pathname === window.location.pathname){
+    item.classList.add('menu_select')
+    }else{
+    item.classList.remove('menu_select')
+    }
+})
+</script>

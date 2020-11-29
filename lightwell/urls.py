@@ -144,4 +144,9 @@ urlpatterns = [
     # 연락처
     path('contact',
          TemplateView.as_view(template_name='contact/contact.html')),
+
+
+############################# 이 아래부터 영문 페이지 url mapping #############################
+    # 메인화면
+    path('en', TemplateView.as_view(template_name='./en/main.html')),
 ]

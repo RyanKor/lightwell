@@ -1,18 +1,9 @@
 {% extends '../base.html' %}
+{% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/company_access.css' %}">
 <div class="block">
-  <div class="menu">
-    <div class="menu_title">
-      <!-- <img src="/static/imgs/company_info/ceo_intro/sub_menu_01.gif" /> -->
-      회사소개
-    </div>
-    <div class="menu_list">
-      <div class="menu_list_button">대표자 인사말</div>
-      <div class="menu_list_button">회사연혁</div>
-      <div class="menu_list_button">사업분야</div>
-      <div class="menu_list_button menu_select">찾아오시는 길</div>
-    </div>
-  </div>
+{% include "./company.html" %}
   <div class="content">
     <div class="compyear_top">찾 / 아 / 오 / 시 / 는 / 길</div>
     <div class="address-text">주소: 경남 통영시 광도면 춘원2로 63-56</div>
@@ -21,7 +12,7 @@
   </div>
 </div>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e9eb6017c886ef06535557dde912521f&libraries=clusterer"></script>
-<script>
+<script defer>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = { 
           center: new kakao.maps.LatLng(34.956544, 128.4122763), // 지도의 중심좌표
