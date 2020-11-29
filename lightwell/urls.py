@@ -168,8 +168,6 @@ urlpatterns = [
         template_name='./en/product/weldig/co2-weldig/miracle-600a.html')),
     path('en/product/weldig/co2-weldig/miracle-500a', TemplateView.as_view(
         template_name='./en/product/weldig/co2-weldig/miracle-500a.html')),
-    path('en/product/weldig/co2-weldig/miracle-350a', TemplateView.as_view(
-        template_name='./en/product/weldig/co2-weldig/miracle-350a.html')),
     path('en/product/weldig/co2-weldig/ship-weldig',
          TemplateView.as_view(template_name='./en/product/weldig/co2-weldig/ship-weldig.html')),
 
