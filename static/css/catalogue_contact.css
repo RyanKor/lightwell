@@ -9,6 +9,7 @@
   display: flex; 
   justify-content: space-between;
   align-items: center;
+  margin: 0 26px;
 }
 
 .catalogue_cat_title {
@@ -36,22 +37,28 @@
   display: flex; 
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #e3f3fd;
   padding: 20px;
+  height: 404px;
 }
 
 .catalogue_prod {
   display: flex; 
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color:#e3f3fd;
   padding: 20px;
+  height: 404px;
 }
 
 .catalogue_a {
   margin-top: 10px;
 }
 .catalogue_comp_img {
+  padding-top: 11.46px;
+  padding-bottom: 11.46px;
   width: 350px;
 }
 .catalogue_prod_img {

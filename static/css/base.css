@@ -5,7 +5,7 @@
 
 .main_content {
   width: 1024px;
-  margin: 30px auto 20px;
+  margin: 60px auto 50px;
   padding: 5px;
 }
 /* header & navbar setting */
@@ -312,6 +312,8 @@ nav {
 .footer_box {
   margin: 40px auto 50px;
   width: 1024px;
+}
+.footer_info {
   padding-left: 30px;
 }
 .site-link {
