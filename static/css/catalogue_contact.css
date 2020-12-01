@@ -16,6 +16,7 @@
   display: flex; 
   justify-content: space-between;
   align-items: center;
+  margin: 0 27px;
 }
 .catalogue_title_comp {
   width: 390px;
@@ -85,10 +86,54 @@
 .contact_sns_img {
   height: 70px;
   margin-right: 40px;
-  margin-bottom: 100px;
 }
 
 .contact_p {
   font-size: 17px;
   line-height: 18px;
+}
+.menu{
+  width: 25%;
+}
+.menu_select{
+  border: 6px solid #64b5f6;
+}
+/* .menu_title{
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  color: #06265b;
+} */
+.menu_title_img {
+  width: 213.5px;
+  margin-bottom: 20px;
+}
+.menu_list_button {
+  text-align: right;
+}
+.menu_list_button > a{
+  display: block;
+  font-size: 1.1rem;
+  color: #444444;
+  text-decoration: none;
+
+}
+.menu_list_button{
+  border-bottom: 1px solid  #666666;
+  margin-right: 2.5rem;
+}
+.menu_list_button > a:hover{
+  color: #666666;
+  transition: all ease-in .5s;
+}
+/* global css */
+.menu_select{
+  border: 6px solid #64b5f6;
+}
+
+.body_content{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
