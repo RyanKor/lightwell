@@ -252,11 +252,11 @@ nav {
   padding: 5px;
   height: 38px !important;
 }
-.company-img-big{
+.company-img-big {
   padding: 5px;
   height: 34px !important;
 }
-.company-img-sm{
+.company-img-sm {
   padding: 5px;
   height: 47px !important;
 }
@@ -341,14 +341,14 @@ body {
 }
 
 .banner-title {
-  font-family: 'Amaranth', sans-serif;;
+  font-family: "Amaranth", sans-serif;
   font-size: 60px;
   text-shadow: 2px 2px 2px gray;
   padding-bottom: 160px;
 }
 
 .banner-subtitle {
-  font-family: 'Amaranth', sans-serif;;
+  font-family: "Amaranth", sans-serif;
   font-size: 60px;
   text-shadow: 2px 2px 2px gray;
   padding-bottom: 20px;
@@ -369,17 +369,17 @@ body {
 
   .carousel-item-banner {
     height: 400px !important;
-  } 
+  }
 
   .banner-title {
-    font-family: 'Amaranth', sans-serif;;
+    font-family: "Amaranth", sans-serif;
     font-size: 50px;
     text-shadow: 2px 2px 2px gray;
     padding-bottom: 80px;
   }
-  
+
   .banner-subtitle {
-    font-family: 'Amaranth', sans-serif;;
+    font-family: "Amaranth", sans-serif;
     font-size: 50px;
     text-shadow: 2px 2px 2px gray;
     padding-bottom: 10px;
@@ -389,11 +389,11 @@ body {
     padding: 2px;
     height: 30px !important;
   }
-  .company-img-big{
+  .company-img-big {
     padding: 2px;
     height: 27px !important;
   }
-  .company-img-sm{
+  .company-img-sm {
     padding: 2px;
     height: 38px !important;
   }
@@ -410,4 +410,7 @@ body {
 .content-cutter {
   justify-content: start;
   width: 100%;
+}
+.block {
+  margin-top: 1.5rem;
 }
