@@ -4,7 +4,8 @@
   align-items: center;
 }
 .title {
-  width: 85%;
+  width: 700px;
+  margin: 0 auto;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -14,13 +15,16 @@
   margin-top: 3rem;
 }
 .welding-product {
+  width:700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
 }
 .co2-welding {
-  width: 85%;
+  width:700px;
+  margin: 0 auto;
   display: flex;
   color: black;
   justify-content: space-between;

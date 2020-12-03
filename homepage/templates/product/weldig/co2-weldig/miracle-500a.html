@@ -1,11 +1,17 @@
 {% extends "../../../base.html" %}
 {% load static %}
 {% block content %}
-  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
 {% include "../../left-navbar.html" %}
-  <!-- 용접기 제품 - CO2 용접기 -->
-  <div class="welding-product">
-    {% include "./co2-welding.html" %}
+<!-- 용접기 제품 - CO2 용접기 -->
+<div class="welding-product">
+  <tr>
+    <td width="750">
+      <img src="/static/imgs/product_info/welding_machine/CO2/miracle500A/sub2_navi.gif" width="745" height="35" alt=""
+        style="padding-left: 20px;">
+    </td>
+  </tr>
+  {% include "./co2-welding.html" %}
   <tr>
     <td width="750">
       <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
@@ -26,7 +32,7 @@
           <tr>
             <td width="466" height="325" valign="top" background="images/sub2_500_2.gif">
 
-              <p align="justify" style="margin-right:30; margin-left:20;">MIRACLE 500A/600A 시리즈는 시뮬레이터 제어 방식을 사용함으로써, 최소
+              <p align="justify" style="margin-right:30px; margin-left:1rem;">MIRACLE 500A/600A 시리즈는 시뮬레이터 제어 방식을 사용함으로써, 최소
                 전류에서 최대 전류까지 연속적인 모든 용접 전류 범위에서 뛰어나고 안정된 아크 특성 및 정전압 특성을 얻을 수 있습니다.
                 <br>또한, 용접기의 출력 측 전력을 차단하는 제어형 용접 전력 공급장치에는, 아크가 없는 기간에는, 1차 측에서 무부하 전력이 소모됨에 따라 토치 스위치 작동에 의해 자동적으로
                 동작되는 전력 절감 회로를 구비함으로써, 아크가 없는 기간 동안의 불필요한 무부하 전력을 절감 할 수 있습니다.</p>
@@ -40,7 +46,7 @@
           <tr>
             <td colspan="2">
 
-              <table cellpadding="0" cellspacing="0" width="100%" style="margin-left:23;">
+              <table cellpadding="0" cellspacing="0" width="93%" style="margin-left: 22px; margin-right: 40px;">
                 <tbody>
                   <tr>
                     <td width="347"
@@ -191,7 +197,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2">
+            <td colspan="2" style="padding-right: 27px;">
               <ul>
                 <li style="list-style-image:url('images/icon.gif'); margin-left:30;"><b>
                     <font color="#2688A8">과전류 차단 회로가 내장</font>
