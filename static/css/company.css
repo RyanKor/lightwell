@@ -41,3 +41,8 @@
 .menu_select {
   border: 6px solid #64b5f6;
 }
+.compyear_top {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}

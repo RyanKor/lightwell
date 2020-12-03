@@ -4,54 +4,78 @@
   align-items: center;
 }
 .title {
-  width: 85%;
+  width: 700px;
+  margin: 0 auto;
   margin-bottom: 1rem;
   text-align: left;
 }
+td > p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .main_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 3rem;
 }
 .welding-product {
+  width: 700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
 }
 .co2-welding {
-  width: 85%;
+  width: 700px;
+  margin: 0 auto;
   display: flex;
   color: black;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.nav-link {
+.co2-welding > a {
+  text-align: center;
+}
+.main_content > .nav-link {
   padding: 0;
 }
 .nav-link,
 .btn > a {
   color: black;
 }
-.btn > a {
+.main_content > .btn > a {
   text-decoration: none;
 }
-.nav {
-  /* width: 25%; */
+.main_content > .nav {
+  width: 25%;
   align-items: flex-start;
   background-color: none;
   border: none;
 }
-.dropdown-menu {
-  font-size: 0.5rem;
-  min-width: 5rem;
-}
 .turnOn {
   color: #007bff;
-  padding: 0.1rem;
 }
-.btn-group > .btn {
-  text-align: left;
+.main_content > .dropdown-toggle {
+  text-align: end;
+  padding-right: 5px;
+  width: 140px !important;
 }
-.btn-group > button {
-  width: 50%;
+.btn.dropdown-toggle {
+  text-align: end;
+  padding-right: 5px;
+  width: 130px !important;
+}
+.nav.flex-column {
+  width: 130px !important;
+}
+div.dropdown-menu.productmenu {
+  font-size: 11px;
+  min-width: 110px !important;
+  max-width: 110px !important;
+}
+.product-a.dropdown-item {
+  width: 110px !important;
+  padding: 4px;
 }

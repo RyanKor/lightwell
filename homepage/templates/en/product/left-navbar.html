@@ -1,65 +1,69 @@
+
 {% load static %}   
 <div class="left-side-bar">
     <img src="{% static 'imgs/product_info/product_eng.png' %}" width="220" height="97" style="margin-bottom: 1rem;" alt="">
-    <ul class="nav flex-column">
-          <!-- left-navbar (대분류/중분류/소분류) 시작 -->
-    <div class="btn-group dropright">
-      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Welding M/C
-      </button>
-      <div class="dropdown-menu">
-        <!-- Dropdown menu links -->
-        <a class="dropdown-item" href="/en/product/weldig/co2-weldig/miracle-600a">CO2 Welding Machine</a>
-        <a class="dropdown-item" href="/en/product/weldig/gouging">Gouging Welder</a>
-        <a class="dropdown-item" href="/en/product/weldig/autocarriage/no-magnet">Auto Carriage</a>
-        <a class="dropdown-item" href="/en/product/weldig/submerged-weldig/lw-sub-ac-1500a">Submerged <br> Welding Machine</a>
-        <a class="dropdown-item" href="/en/product/weldig/dc-tig-weldig/tig-300ep">DC Tig Welder</a>
-        <a class="dropdown-item" href="/en/product/weldig/arch-weldig/apollo-180">Arc Welder</a>
-        <a class="dropdown-item" href="/en/product/weldig/shipboard_panel">Shipboard <br> Welding Machine</a>
-      </div>
+<ul class="nav flex-column">
+  <!-- left-navbar (대분류/중분류/소분류) 시작 -->
+  <div class="btn-group dropright">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Welding M/C
+    </button>
+    <div class="dropdown-menu productmenu">
+      <!-- Dropdown menu links -->
+      <a class="dropdown-item product-a" href="/en/product/weldig/co2-weldig/miracle-600a">CO2 Welding Machine</a>
+      <a class="dropdown-item product-a" href="/en/product/weldig/gouging">Gouging Welder</a>
+      <a class="dropdown-item product-a" href="/en/product/weldig/autocarriage/no-magnet">Auto Carriage</a>
+      <a class="dropdown-item product-a"
+        href="/en/product/weldig/submerged-weldig/lw-sub-ac-1500a">Submerged<br />Welding Machine</a>
+      <a class="dropdown-item product-a" href="/en/product/weldig/dc-tig-weldig/tig-300ep">DC Tig Welder</a>
+      <a class="dropdown-item product-a" href="/en/product/weldig/arch-weldig/apollo-180">Arc Welder</a>
+      <a class="dropdown-item product-a" href="/en/product/weldig/shipboard_panel">Shipboard<br />Welding Machine</a>
     </div>
-    <div class="btn-group dropright">
-      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Expendables of <br> Welding M/C
-      </button>
-      <div class="dropdown-menu">
-        <!-- Dropdown menu links -->
-        <a class="dropdown-item" href="/en/product/welding-expendable/expendable_co2">CO2</a>
-        <a class="dropdown-item" href="/en/product/welding-expendable/expendable_auto">AUTO CARRIAGE</a>
-        <a class="dropdown-item" href="/en/product/welding-expendable/expendable_tig">TIG</a>
-        <a class="dropdown-item" href="/en/product/welding-expendable/expendable_regulator">REGULATOR</a>
-      </div>
+  </div>
+  <div class="btn-group dropright">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Expendables of <br> Welding M/C
+    </button>
+    <div class="dropdown-menu productmenu">
+      <!-- Dropdown menu links -->
+      <a class="dropdown-item product-a" href="/en/product/welding-expendable/expendable_co2">CO2</a>
+      <a class="dropdown-item product-a" href="/en/product/welding-expendable/expendable_auto">AUTO CARRIAGE</a>
+      <a class="dropdown-item product-a" href="/en/product/welding-expendable/expendable_tig">TIG</a>
+      <a class="dropdown-item product-a" href="/en/product/welding-expendable/expendable_regulator">REGULATOR</a>
     </div>
+  </div>
 
-    <div class="btn-group dropright">
-      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cutting M/C
-      </button>
-      <div class="dropdown-menu">
-        <!-- Dropdown menu links -->
-        <a class="dropdown-item" href="/en/product/cutter/2d_plasma">2D PLASMA</a>
-        <a class="dropdown-item" href="/en/product/cutter/3d_link_plasma">3D LINK PLASMA</a>
-        <a class="dropdown-item" href="/en/product/cutter/cnc_gas">CNC GAS <br> CUTTING MACHINE</a>
-        <a class="dropdown-item" href="/en/product/cutter/cold_rolling">COLD ROLLING <br> BENDING MACHINE</a>
-        <a class="dropdown-item" href="/en/product/cutter/elbow_cutting_machine">ELBOW <br> CUTTING MACHINE</a>
-        <a class="dropdown-item" href="/en/product/cutter/flame_planer">FLAME PLANER</a>
-        <a class="dropdown-item" href="/en/product/cutter/high_frequency_bending_machine">HIGH FREQUENCY <br> BENDING MACHINE</a>
-        <a class="dropdown-item" href="/en/product/cutter/pipe_coaster">PIPE COASTER</a>
-        <a class="dropdown-item" href="/en/product/cutter/pipe_gas_cutting_machine">PIPE GAS <br> CUTTING MACHINE</a>
-        <a class="dropdown-item" href="/en/product/cutter/pipe_rotator">PIPE ROTATOR</a>
-        <a class="dropdown-item" href="/en/product/cutter/positioner">POSITIONER</a>
-      </div>
+  <div class="btn-group dropright">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Cutting M/C
+    </button>
+    <div class="dropdown-menu productmenu">
+      <!-- Dropdown menu links -->
+      <a class="dropdown-item product-a" href="/en/product/cutter/2d_plasma">2D PLASMA</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/3d_link_plasma">3D LINK PLASMA</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/cnc_gas">CNC GAS <br> CUTTING MACHINE</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/cold_rolling">COLD ROLLING <br> BENDING MACHINE</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/elbow_cutting_machine">ELBOW <br> CUTTING MACHINE</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/flame_planer">FLAME PLANER</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/high_frequency_bending_machine">HIGH FREQUENCY <br>
+        BENDING MACHINE</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/pipe_coaster">PIPE COASTER</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/pipe_gas_cutting_machine">PIPE GAS <br> CUTTING
+        MACHINE</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/pipe_rotator">PIPE ROTATOR</a>
+      <a class="dropdown-item product-a" href="/en/product/cutter/positioner">POSITIONER</a>
     </div>
-    <div class="btn-group dropright">
-      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Expendables of <br> Cutting M/C
-      </button>
-      <div class="dropdown-menu">
-        <!-- Dropdown menu links -->
-        <a class="dropdown-item" href="/en/product/expendable_cutting">Expendables of <br> Cutting M/C</a>
+  </div>
+  <div class="btn-group dropright">
+    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Expendables of <br> Cutting M/C
+    </button>
+    <div class="dropdown-menu productmenu">
+      <!-- Dropdown menu links -->
+      <a class="dropdown-item product-a" href="/en/product/expendable_cutting">Expendables of <br> Cutting M/C</a>
 
-      </div>
     </div>
-    </ul>
-    <!-- left-navbar (대분류/중분류/소분류) 끝 -->
-  </div> 
+  </div>
+</ul>
+</div>
+<!-- left-navbar (대분류/중분류/소분류) 끝 -->
