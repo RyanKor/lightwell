@@ -1,37 +1,52 @@
 {% extends "../../base.html" %}
 {% load static %}
 {% block content %}
-  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
 {% include "../left-navbar.html" %}
-  <!-- 용접기 제품 - CO2 용접기 -->
-  <div class="welding-product">
-{% include "./tig.html" %}
-<td width="750" valign="top" height="656">
-						
-  <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
-      <tbody>
-      <tr>
-          <td width="750">
-              <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
-                  <tbody><tr>
-                      <td valign="top" height="210" width="750">
-<img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_01.gif' %}" width="750" height="226" border="0"></td>
-</tr>
-                  <tr>
-                      <td>
+<!-- 용접기 제품 - CO2 용접기 -->
+<div class="welding-product">
+  <tr>
+    <td width="750">
+      <img src="/static/imgs/product_info/welding_machine/CO2/miracle500A/sub2_navi.gif" width="745" height="35" alt=""
+        style="padding-left: 20px;">
+    </td>
+  </tr>
+  {% include "./tig.html" %}
+  <td width="750" valign="top" height="656">
 
-                          <p><img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_02.gif' %}" width="750" height="217" border="0"></p>
-</td>
-</tr>
-                  <tr>
-                      <td>                                                <p><img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_03.gif' %}" width="750" height="217" border="0"></p>
-</td>
-</tr>
-</tbody></table></td>
-</tr>
-      <tr>
+    <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td width="750">
+            <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td valign="top" height="210" width="750">
+                    <img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_01.gif' %}" width="750"
+                      height="226" border="0"></td>
+                </tr>
+                <tr>
+                  <td>
+
+                    <p><img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_02.gif' %}"
+                        width="750" height="217" border="0"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><img src="{% static 'imgs/product_info/welding_expendables/TIG/sub2_02_sub3_03.gif' %}"
+                        width="750" height="217" border="0"></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
           <td width="750">&nbsp;</td>
-</tr>
-</tbody></table></td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
 </div>
 {% endblock %}
