@@ -1,43 +1,60 @@
 {% extends "../../base.html" %}
 {% load static %}
 {% block content %}
-  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
 {% include "../left-navbar.html" %}
-  <!-- 용접기 제품 - CO2 용접기 -->
-  <div class="welding-product">
-{% include "./cutter.html" %}
-<table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
+<!-- 용접기 제품 - CO2 용접기 -->
+<div class="welding-product">
   <tr>
-      <td height="14">
-<img src="{% static 'imgs/product_info/cutter_expendables/sub_m_02.gif' %}" width="750" height="20" border="0"></td>
-</tr>
-  <tr>
-      <td width="750">
+    <td width="750">
+      <img src="/static/imgs/product_info/welding_machine/CO2/miracle500A/sub2_navi.gif" width="745" height="35" alt=""
+        style="padding-left: 20px;">
+    </td>
+  </tr>
+  {% include "./cutter.html" %}
+  <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td height="14">
+          <img src="{% static 'imgs/product_info/cutter_expendables/sub_m_02.gif' %}" width="750" height="20"
+            border="0"></td>
+      </tr>
+      <tr>
+        <td width="750">
           <table id="Table_01" width="750" border="0" cellpadding="0" cellspacing="0">
-              <tbody><tr>
-                  <td valign="top" height="210" width="750">
-<img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_01.gif' %}" width="750" height="226" border="0"></td>
-</tr>
+            <tbody>
               <tr>
-                  <td>
+                <td valign="top" height="210" width="750">
+                  <img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_01.gif' %}" width="750" height="226"
+                    border="0"></td>
+              </tr>
+              <tr>
+                <td>
 
-                      <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_02.gif' %}" width="750" height="217" border="0"></p>
-</td>
-</tr>
+                  <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_02.gif' %}" width="750"
+                      height="217" border="0"></p>
+                </td>
+              </tr>
               <tr>
-                  <td>                                                <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_03.gif' %}" width="750" height="217" border="0"></p>
-</td>
-</tr>
+                <td>
+                  <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_03.gif' %}" width="750"
+                      height="217" border="0"></p>
+                </td>
+              </tr>
               <tr>
-                  <td>                                                <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_04.gif' %}" width="750" height="217" border="0"></p>
-</td>
-</tr>
-</tbody></table></td>
-</tr>
-  <tr>
-      <td width="750">&nbsp;</td>
-</tr>
-</tbody></table>
+                <td>
+                  <p><img src="{% static 'imgs/product_info/cutter_expendables/sub2_04_04.gif' %}" width="750"
+                      height="217" border="0"></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="750">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {% endblock %}
