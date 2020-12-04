@@ -19,7 +19,7 @@ td > p {
   margin-top: 3rem;
 }
 .welding-product {
-  width:700px;
+  width: 700px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,28 +27,28 @@ td > p {
   width: 80%;
 }
 .co2-welding {
-  width:700px;
+  width: 700px;
   margin: 0 auto;
   display: flex;
   color: black;
   justify-content: space-between;
-  padding-left:20px;
-  padding-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .co2-welding > a {
   text-align: center;
 }
-.main_content >  .nav-link {
+.main_content > .nav-link {
   padding: 0;
 }
 .nav-link,
 .btn > a {
   color: black;
 }
-.main_content >  .btn > a {
+.main_content > .btn > a {
   text-decoration: none;
 }
-.main_content >  .nav {
+.main_content > .nav {
   width: 25%;
   align-items: flex-start;
   background-color: none;
@@ -78,4 +78,7 @@ div.dropdown-menu.productmenu {
 .product-a.dropdown-item {
   width: 110px !important;
   padding: 4px;
+}
+.btn-group > button {
+  font-weight: bold;
 }

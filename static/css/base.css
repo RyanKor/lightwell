@@ -5,7 +5,7 @@
 
 .main_content {
   width: 1024px;
-  margin: 60px auto 50px;
+  margin: 30px auto 50px;
   padding: 5px;
 }
 /* header & navbar setting */
@@ -419,4 +419,12 @@ body {
 }
 .block {
   margin-top: 1.5rem;
+}
+
+.compyear_top {
+  margin-top: 2rem;
+}
+
+.menu_list_button > a {
+  font-weight: bold;
 }
