@@ -79,3 +79,6 @@ div.dropdown-menu.productmenu {
   width: 110px !important;
   padding: 4px;
 }
+.btn-group > button {
+  font-weight: bold;
+}
