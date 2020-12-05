@@ -6,14 +6,14 @@
 }
 
 .catalogue_catalogue {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 26px;
 }
 
 .catalogue_cat_title {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 27px;
@@ -35,7 +35,7 @@
   margin-bottom: 5px;
 }
 .catalogue_comp {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -45,11 +45,11 @@
 }
 
 .catalogue_prod {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color:#e3f3fd;
+  background-color: #e3f3fd;
   padding: 20px;
   height: 404px;
 }
@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-.contact_top{
+.contact_top {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -92,10 +92,10 @@
   font-size: 17px;
   line-height: 18px;
 }
-.menu{
+.menu {
   width: 25%;
 }
-.menu_select{
+.menu_select {
   border: 6px solid #64b5f6;
 }
 /* .menu_title{
@@ -111,29 +111,32 @@
 .menu_list_button {
   text-align: right;
 }
-.menu_list_button > a{
+.menu_list_button > a {
   display: block;
   font-size: 1.1rem;
   color: #444444;
   text-decoration: none;
-
 }
-.menu_list_button{
-  border-bottom: 1px solid  #666666;
+.menu_list_button {
+  border-bottom: 1px solid #666666;
   margin-right: 2.5rem;
 }
-.menu_list_button > a:hover{
+.menu_list_button > a:hover {
   color: #666666;
-  transition: all ease-in .5s;
+  transition: all ease-in 0.5s;
 }
 /* global css */
-.menu_select{
+.menu_select {
   border: 6px solid #64b5f6;
 }
 
-.body_content{
+.body_content {
   margin: auto;
   display: flex;
   flex-direction: row;
   height: 100%;
+}
+
+.contact-content {
+  width: 75%;
 }
