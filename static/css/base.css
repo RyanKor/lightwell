@@ -404,8 +404,11 @@ body {
     height: 38px !important;
   }
   .sm {
-    font-size: 11px !important;
+    /* font-size: 11px !important; */
     display: flex;
+  }
+  .bigger-text {
+    font-size: 0.93rem !important;
   }
 }
 .content.content-container {
