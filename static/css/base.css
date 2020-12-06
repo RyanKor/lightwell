@@ -5,7 +5,7 @@
 
 .main_content {
   width: 1024px;
-  margin: 30px auto 50px;
+  margin: 50px auto 50px;
   padding: 5px;
 }
 /* header & navbar setting */
@@ -417,9 +417,9 @@ body {
   justify-content: start;
   width: 100%;
 }
-.block {
+/* .block {
   margin-top: 1.5rem;
-}
+} */
 
 .compyear_top {
   margin-top: 2rem;
