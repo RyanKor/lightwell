@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="welding-box">
-        <div class="title">Expendables of Weliding M/C</div>
+        <div class="title" style="font-size: 0.9rem;">Expendables of Weliding M/C</div>
         <div class="welding">
             <div class="content">
                 <a href="/en/product/welding-expendable/expendable_co2">CO2</a>
@@ -100,4 +100,14 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    if( (navigator.userAgent).indexOf("Chrome") > -1   //Chrome, 안드로이드 폰, Edge가 해당됩니다.
+                || (navigator.userAgent).indexOf("rv:") > -1   //익스플로러만 해당됩니다
+                ){
+                    console.log("Browser Recognized")
+            }else{
+                document.querySelector('.sm').style.fontSize = "0.71rem";  //아이폰, 사파리가 해당됩니다.
+            }
+</script>
 {% endblock %}
