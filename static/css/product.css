@@ -67,6 +67,14 @@ td > p {
   padding-right: 5px;
   width: 130px !important;
 }
+
+@media (max-width: 400px) {
+  .btn.dropdown-toggle {
+    text-align: end;
+    padding-right: 5px;
+    width: 135px !important;
+  }
+}
 .nav.flex-column {
   width: 130px !important;
 }
@@ -78,6 +86,7 @@ div.dropdown-menu.productmenu {
 .product-a.dropdown-item {
   width: 110px !important;
   padding: 4px;
+  font-size: 11px !important;
 }
 .btn-group > button {
   font-weight: bold;
